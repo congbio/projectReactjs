@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {Link }from 'react-router-dom';
 class Header extends Component {
-
     render() {
         return (
+  <>
         <header className="header_area">
         <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,11 +22,8 @@ class Header extends Component {
                 <li className="nav-item"><Link to={'/Contact'} className="nav-link" href="#">CONTACT</Link></li>
                 <li className="nav-item"><Link to={'/Booking'} className="nav-link" href="#">Booking</Link></li>
               </ul>  
-              </div>
-              
-            </div>
-            
-        
+              </div>            
+            </div>               
           <div className="col-md-5 mx-auto">
             
             <div className="input-group">
@@ -37,7 +34,7 @@ class Header extends Component {
           </nav>
         </div>
       </header>
-     
+  </>
         );
     }
 }
