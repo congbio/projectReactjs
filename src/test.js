@@ -17,15 +17,20 @@ import React, { useEffect, useReducer } from "react";
         }
         useEffect(() => {
             getData()      
+            console.log(listProduct.length);
+
         },[])
 
         return (
             <>
-            
-           { console.log(listProduct)}
-            <div>
-
-            Coong gai depj
+    
+            <div> 
+            { 
+            listProduct.map((product) => (
+               <div>{product.name}</div>
+              
+              ))
+              }
 
             </div>
                    
