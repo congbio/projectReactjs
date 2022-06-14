@@ -9,21 +9,16 @@ import React, { useEffect, useReducer } from "react";
         const getData = () => {
             console.log("chayj roi as");
            
-        axios.get("http://localhost:3000/hote").then((res) => {
-            console.log("chayj roi then");
-                setListProduct(res.data);
-               
-            });
+            axios.get("http://localhost:3000/hotel").then((res) => {
+                console.log("chayj roi then");
+                    setListProduct(res.data);
+                
+                });
         }
         useEffect(() => {
-            
-            getData()
-            
-            
+            getData()      
         },[])
-         
 
-       
         return (
             <>
             
