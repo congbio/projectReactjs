@@ -1,31 +1,42 @@
+
+import { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useReducer } from "react";
  function App() {
         const [listProduct,setListProduct] = useState([]); 
-        const [type, setType] = useState('') 
+        
 
         const getData = () => {
-        axios.get("http://localhost:3000/hote")
-        .then((res) => {
+            console.log("chayj roi as");
+           
+        axios.get("http://localhost:3000/hote").then((res) => {
+            console.log("chayj roi then");
                 setListProduct(res.data);
+               
             });
         }
         useEffect(() => {
-            // console.info(Math.random())
+            
             getData()
+            
             
         },[])
          
 
-        const changeTypeProduct=(type)=>{
-        
-            setType(type)
-        }
+       
         return (
             <>
-            listProduct.map((product) => ()
+            
+           { console.log(listProduct)}
+            <div>
+
+            Coong gai depj
+
+            </div>
                    
             </>
         );
     }
 
 
-    export default App;
+export default App;
