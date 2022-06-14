@@ -1,4 +1,5 @@
-﻿[
+{
+	"hotel":[
 	{
 		"image": "eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg_ca=11&ce=1&s=450x450.jpg",
 		"name": "Khách Sạn Mường Thanh Luxury Sông Hàn (Muong Thanh Luxury Song Han Hotel)",
@@ -264,3 +265,4 @@
 		"price": "529.490 ₫"
 	}
 ]
+}
