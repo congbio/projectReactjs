@@ -15,7 +15,7 @@ const routes = [{
 },
 {
     path : '/Contact',
-	exact : true,
+	exact : false,
 	main : ({history})=> <Contact history={history} />
 },
 {
