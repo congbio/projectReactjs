@@ -1,11 +1,47 @@
-const Card = () => {
-    <div className="card" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="..." />
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
 
+import { useState } from "react";
+import axios from "axios";
+
+
+import React, { useEffect } from "react";
+import Card from "./conten/child";
+function App() {
+    const [listProduct, setListProduct] = useState([]);
+    const getData = () => {
+        
+        axios.get("http://localhost:3000/hotel").then((res) => {
+            
+            setListProduct(res.data);
+        });
+    }
+    useEffect(() => {
+        getData()
+        
+    }, [])
+    return (
+        <>
+            <div className="container">
+                <div className="row">
+                    {
+                        listProduct.map((product) => (
+                            <Card
+                                image={product.image}
+                                name={product.name}
+                                linkname={product.linkname}
+                                address={product.address}
+                            >
+
+                            </Card>
+                        ))
+
+                    }
+                </div>
+
+            </div>
+
+        </>
+    );
 }
+
+
+export default App;
