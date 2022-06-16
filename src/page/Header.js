@@ -11,11 +11,11 @@ class Header extends Component {
             <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>
             
             
-            <div className="">
+            <div className="dd">
               <button className="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i className="fas fa-bars" />
               </button>    
-              <div className="" id="navbarSupportedContent">
+              <div className="fd" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav">
                 <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li> 
                 <li className="nav-item"><Link to={'/About'} className="nav-link" href="#">ABOUT US</Link></li>
