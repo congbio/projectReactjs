@@ -6,24 +6,14 @@ class Header extends Component {
   <>
         <header className="header_area">
         <div className="container">
-<<<<<<< HEAD
+
+
         <nav className="navbar navbar-expand-lg navbar-light bg-light">     
             <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>  
             <div className="">
               
               <div className="" id="navbarSupportedContent">
-=======
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            
-            <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>
-            
-            
-            <div className="dd">
-              <button className="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i className="fas fa-bars" />
-              </button>    
-              <div className="fd" id="navbarSupportedContent">
->>>>>>> 284817cb7793abdba76421a65e783930b9117aca
+
                 <ul className="nav navbar-nav menu_nav">
                 <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li> 
                 <li className="nav-item"><Link to={'/About'} className="nav-link" href="#">ABOUT US</Link></li>
