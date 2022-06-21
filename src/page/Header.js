@@ -6,15 +6,10 @@ class Header extends Component {
         return (
         <header className="header_area">
         <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            
-            <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>
-            
-            
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">     
+            <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>  
             <div className="">
-              <button className="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i className="fas fa-bars" />
-              </button>    
+              
               <div className="" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav">
                 <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li> 
