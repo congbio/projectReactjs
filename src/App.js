@@ -1,10 +1,10 @@
-
 import React, { Component } from 'react';
 import Header from './page/Header';
+import Footer from './page/Footer';
 import {Route , Switch , BrowserRouter }from 'react-router-dom';
 import routes from './routes';
-import Footer from './page/Footer';
-class App extends Component {
+
+export default class App extends Component {
   render() {
     return (
        <BrowserRouter>
@@ -20,8 +20,5 @@ class App extends Component {
        <Footer></Footer>
     </BrowserRouter>
  
-    
     );
-  }}
-  export default App;
-
+}}
