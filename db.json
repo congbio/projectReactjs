@@ -1,4 +1,17 @@
 {
+	"user" : [
+		{
+		"id":1,
+		  "username": "conga",
+		  "password": "cong",
+		  "email":"kdfdlkfkldf@.com"
+		},
+		{
+			"id":2,
+			"username": "user2",
+			"password": "pass2"
+		}
+	],
 	"hotel":[
 	{
 		"image": "https://www.hoteljob.vn/files/Pic/Th%C3%A1ng%204/Khach-san-la-gi-01.jpg",
