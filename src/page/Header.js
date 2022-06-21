@@ -1,27 +1,37 @@
 import React, { Component } from 'react';
 import {Link }from 'react-router-dom';
 class Header extends Component {
-
     render() {
         return (
+  <>
         <header className="header_area">
         <div className="container">
+<<<<<<< HEAD
         <nav className="navbar navbar-expand-lg navbar-light bg-light">     
             <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>  
             <div className="">
               
               <div className="" id="navbarSupportedContent">
+=======
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            
+            <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>
+            
+            
+            <div className="dd">
+              <button className="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i className="fas fa-bars" />
+              </button>    
+              <div className="fd" id="navbarSupportedContent">
+>>>>>>> 284817cb7793abdba76421a65e783930b9117aca
                 <ul className="nav navbar-nav menu_nav">
                 <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li> 
                 <li className="nav-item"><Link to={'/About'} className="nav-link" href="#">ABOUT US</Link></li>
                 <li className="nav-item"><Link to={'/Contact'} className="nav-link" href="#">CONTACT</Link></li>
                 <li className="nav-item"><Link to={'/Booking'} className="nav-link" href="#">Booking</Link></li>
               </ul>  
-              </div>
-              
-            </div>
-            
-        
+              </div>            
+            </div>               
           <div className="col-md-5 mx-auto">
             
             <div className="input-group">
@@ -32,7 +42,7 @@ class Header extends Component {
           </nav>
         </div>
       </header>
-     
+  </>
         );
     }
 }
