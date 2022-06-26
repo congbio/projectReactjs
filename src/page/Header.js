@@ -1,40 +1,35 @@
 import React, { Component } from 'react';
-import {Link }from 'react-router-dom';
+import { Link } from 'react-router-dom';
 class Header extends Component {
-    render() {
-        return (
-  <>
+  render() {
+    return (
+      <>
         <header className="header_area">
-        <div className="container">
+          <div className="container">
 
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">     
-            <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>  
-            <div className="">
-              
-              <div className="" id="navbarSupportedContent">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+              <a className="navbar-brand logo_h" href="index.html"><img src="Logo.png" alt="" /></a>
+              <div className="">
 
-                <ul className="nav navbar-nav menu_nav">
-                <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li> 
-                <li className="nav-item"><Link to={'/About'} className="nav-link" href="#">ABOUT US</Link></li>
-                <li className="nav-item"><Link to={'/Contact'} className="nav-link" href="#">CONTACT</Link></li>
-                <li className="nav-item"><Link to={'/Booking'} className="nav-link" href="#">Booking</Link></li>
-              </ul>  
-              </div>            
-            </div>               
-          <div className="col-md-5 mx-auto">
-            
-            <div className="input-group">
-              <input className="form-control border-end-0 border rounded-pill" type="search" defaultValue="search" id="example-search-input" />
-            </div>
+                <div className="" id="navbarSupportedContent">
+
+                  <ul className="nav navbar-nav menu_nav">
+                    <li className="nav-item active"><Link to={'/'} className="nav-link" href="#">HOME</Link></li>
+                    <li className="nav-item"><Link to={'/About'} className="nav-link" href="#">ABOUT US</Link></li>
+                    <li className="nav-item"><Link to={'/Contact'} className="nav-link" href="#">CONTACT</Link></li>
+                    <li className="nav-item"><Link to={'/Booking'} className="nav-link" href="#">BOOKING</Link></li>
+                    <li className="nav-item"><Link to={'/login'} className="nav-link" href="#">LOGIN</Link></li>
+                    <li className="nav-item"><Link to={'/logout'} className="nav-link" href="#">LOGOUT</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
-        
-          </nav>
-        </div>
-      </header>
-  </>
-        );
-    }
+        </header>
+      </>
+    );
+  }
 }
 
 export default Header;
