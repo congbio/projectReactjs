@@ -3,6 +3,8 @@ import About from './page/About';
 import Contact from './page/Contact';
 import Booking from './page/Booking';
 import React from 'react';
+import ExLogin from './Component/login/Login';
+import ExLogout from './Component/logout/logout';
 const routes = [{
     path : '/',
 	exact : true,
@@ -17,6 +19,17 @@ const routes = [{
     path : '/Contact',
 	exact : false,
 	main : ({history})=> <Contact history={history} />
+},
+
+{
+    path : '/login',
+	exact : false,
+	main : ({history})=> <ExLogin history={history} />
+},
+{
+    path : '/logout',
+	exact : false,
+	main : ({history})=> <ExLogout history={history} />
 },
 {
     path : '/Admin',
