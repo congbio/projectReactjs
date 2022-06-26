@@ -8,7 +8,7 @@ const Card = (props) => {
 					<img src={props.image} alt="image hotel" />
 					<div className="location-contents">
 						<h3>
-							<a href={'props.linkname'}>{props.name} </a>
+							<a href={props.linkname}>{props.name} </a>
 						</h3>
 						<div className="price">
 							Started from<span>{props.price}</span>{" "}
