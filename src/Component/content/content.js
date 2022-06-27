@@ -13,32 +13,29 @@ const priceFilters = [
 function App() {
   const [address, setaddress] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
-
   const [namehotel, setnamehotel] = useState("");
   const [listProduct, setListProduct] = useState([]);
-  const [listProductSearch, setListProductSearch] = useState([]);
+
 
   const getData = () => {
     axios.get("http://localhost:3000/hotel").then((res) => {
       setListProduct(res.data);
-      setListProductSearch(res.data)
     });
   };
 	
-	const ProcessPrice =()=>{
 
-	}
 
   const handleSubmit = (event) => {
     //Prevent page reload
     event.preventDefault();
-    setListProductSearch(listProduct
+    getData();
+    setListProduct(listProduct
                     .filter(product => address !== "" ? product.address.includes(address) : true)
 										.filter(product => namehotel !== "" ? product.name.includes(namehotel) : true)
 										.filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >= 
 										  priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
                     )
-                    
+        
     )
   };
   console.log(address, ' ', priceFilter, ' ');
@@ -104,9 +101,8 @@ function App() {
           {priceFilter}
         </div>
         <div className="row">
-					{console.log(namehotel)}
           {
-					listProductSearch
+					listProduct
 					.map((product, index) => (
 						<Card
 							image={product.image}
