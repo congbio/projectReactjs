@@ -1,5 +1,4 @@
-{
-	"hotel":[
+[
 	{
 		"name": "Khách Sạn Mường Thanh Luxury Sông Hàn (Muong Thanh Luxury Song Han Hotel)",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
@@ -232,4 +231,3 @@
 		"price": ""
 	}
 ]
-}
