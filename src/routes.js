@@ -4,7 +4,7 @@ import Contact from './page/Contact';
 import Booking from './page/Booking';
 import React from 'react';
 import ExLogin from './Component/login/Login';
-import ExLogout from './Component/logout/logout';
+import ExLogout from './Component/logout/register';
 const routes = [{
     path : '/',
 	exact : true,
@@ -27,7 +27,7 @@ const routes = [{
 	main : ({history})=> <ExLogin history={history} />
 },
 {
-    path : '/logout',
+    path : '/register',
 	exact : false,
 	main : ({history})=> <ExLogout history={history} />
 },

@@ -1,12 +1,11 @@
 
 import React, { useState, useEffect } from "react";
-// import ReactDOM from "react-dom";
+
 import axios from "axios";
 import '../../css/styleLogout.css'
-import ExLogin from "../login/Login";
+import emailjs from '@emailjs/browser';
 
-
-const apiaccount = 'https://62b13ad7196a9e987031ac4a.mockapi.io/account';
+const apiaccount = 'http://localhost:3000/account';
 
 const ExLogout = () => {
     const [errorMessages, setErrorMessages] = useState({});
@@ -38,18 +37,25 @@ const ExLogout = () => {
                 return;
             }
         }
+        console.log(mail.value);
         var newAcount = {
             email: mail.value,
             password: pass.value,
             username: uname.value
         }
-        axios.post(apiaccount, newAcount)
-            .then(() => {
-                // alert("Logged up successfully!");
-                // <ExLogin/>
-                console.log("thành công");
-                window.location.assign("http://localhost:4000/login")
-            })
+        // console.log(newAcount[email]);
+        emailjs.send('service_0janfsk', 'template_zkqk07k', newAcount,'user_5KiMCYtNrqLlFbsDxXynH')
+                .then((result) => {
+                    console.log('result.text');
+                }, (error) => {
+                    console.log('error.text');
+                });
+        // axios.post(apiaccount, newAcount)
+        //     .then(() => {
+                
+        //         console.log("thành công");
+        //         window.location.assign("http://localhost:4000/login")
+        //     })
     };
 
     // Generate JSX code for error message
@@ -60,17 +66,16 @@ const ExLogout = () => {
 
     const renderForm = (
 
-        <div class="logout-page">
-            <div class="form_logout">
+        <div className="logout-page">
+            <div className="form_logout">
 
-                <form class="register-form" onSubmit={handleSubmit}>
+                <form className="register-form" onSubmit={handleSubmit}>
                 <h1><strong>Logout</strong> </h1>
                     <input type="text" placeholder="UserName" name="uname" />
                     <input type="email" placeholder="Email" name="mail" />
                     <input type="password" placeholder="Password" name="pass" />
                     <button  type="submit">logout</button>
                 </form>
-
             </div>
         </div>
     )

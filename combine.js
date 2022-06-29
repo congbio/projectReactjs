@@ -1,9 +1,10 @@
-const hotel = require('./db.json');
-const room = require('./dbroom.json');
+const hotel = require('./data/db.json');
+const room = require('./data/dbroom.json');
+const account = require('./data/dbaccount.json');
 
 
 module.exports = () => ({
   hotel: hotel,
-  room: room
-  
+  room: room,
+  account:account
 });
