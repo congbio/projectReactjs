@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from "react";
-
+// import ReactDOM from "react-dom";
 import axios from "axios";
 import '../../css/styleLogout.css'
+import ExLogin from "../login/Login";
+
 import emailjs from '@emailjs/browser';
 
 const apiaccount = 'http://localhost:3000/account';
@@ -37,13 +39,12 @@ const ExLogout = () => {
                 return;
             }
         }
-        console.log(mail.value);
         var newAcount = {
             email: mail.value,
             password: pass.value,
             username: uname.value
         }
-        // console.log(newAcount[email]);
+        console.log(newAcount);
         emailjs.send('service_0janfsk', 'template_zkqk07k', newAcount,'user_5KiMCYtNrqLlFbsDxXynH')
                 .then((result) => {
                     console.log('result.text');
