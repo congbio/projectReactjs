@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "json-server --watch combine.js"
+    "server": "json-server --watch combine.js"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +40,7 @@
     ],
     "development": [
       "last 1 chrome version",
-      
+
       "last 1 firefox version",
       "last 1 safari version"
     ]

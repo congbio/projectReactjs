@@ -25,10 +25,7 @@ function Showroom() {
     <>
       <div className="row">
         <h2>cong</h2>
-        {
-          console.log(listProduct)
-
-        }
+        
         {
           listProduct
             .map((product, index) => (

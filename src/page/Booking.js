@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import Showroom from '../Component/room/showroom';
 
 class Booking extends Component {
 
     render() {
         return (
-            <><p>tôi là ai B</p></>
+            
+            <div className='container'>
+                
+                <Showroom/>
+            </div>
         );
     }
 }

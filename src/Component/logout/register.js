@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 // import ReactDOM from "react-dom";
 import axios from "axios";
 import '../../css/styleLogout.css'
-import ExLogin from "../login/Login";
 
 import emailjs from '@emailjs/browser';
 
@@ -39,6 +38,7 @@ const ExLogout = () => {
                 return;
             }
         }
+       
         var newAcount = {
             email: mail.value,
             password: pass.value,
@@ -51,31 +51,26 @@ const ExLogout = () => {
                 }, (error) => {
                     console.log('error.text');
                 });
-        // axios.post(apiaccount, newAcount)
-        //     .then(() => {
+        axios.post(apiaccount, newAcount)
+            .then(() => {
                 
-        //         console.log("thành công");
-        //         window.location.assign("http://localhost:4000/login")
-        //     })
+                console.log("thành công");
+                window.location.assign("http://localhost:4000/login")
+            })
     };
-
     // Generate JSX code for error message
-    const renderErrorMessage = (name) =>
-        name === errorMessages.name && (
-            <div className="error">{errorMessages.message}</div>
-        );
-
+   
     const renderForm = (
 
         <div className="logout-page">
             <div className="form_logout">
 
                 <form className="register-form" onSubmit={handleSubmit}>
-                <h1><strong>Logout</strong> </h1>
+                <h1><strong>Register</strong> </h1>
                     <input type="text" placeholder="UserName" name="uname" />
                     <input type="email" placeholder="Email" name="mail" />
                     <input type="password" placeholder="Password" name="pass" />
-                    <button  type="submit">logout</button>
+                    <button  type="submit">Submit</button>
                 </form>
             </div>
         </div>

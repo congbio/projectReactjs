@@ -4,7 +4,9 @@ class Contact extends Component {
 
     render() {
         return (
-            <><p>tôi là ai fgh</p></>
+            <div className='container'>
+                contact
+            </div>
         );
     }
 }

@@ -40,6 +40,9 @@ const ExLogin =()=> {
         for (var i = 0; i < listUser.length; i++) {
             if (uname.value == listUser[i].username && pass.value == listUser[i].password) {
                 setIsSubmitted(true);
+                localStorage.setItem("username",uname.value);
+                localStorage.setItem("email",listUser[i].email);
+                console.log(listUser[i].email);
                 break;
             }
             else{

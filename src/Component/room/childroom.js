@@ -1,7 +1,14 @@
+import FillInfromation from "../Fill/FillInfromation";
+import { Link } from 'react-router-dom';
+
 const Childroom = (props) => {
+	const bookingRoom =()=>{
+		console.log('success!');
+		
+	}
 	return (
 		<>
-			<div key={props.key} className="col-lg-4">
+			<div  className="col-lg-4">
 				<div className="single-location mb-3">
 					<img src={props.image} alt="image hotel" />
 					<div className="location-contents">
@@ -19,9 +26,13 @@ const Childroom = (props) => {
 						</div>
 						<span>{props.area}</span> <br/>
 						<span>{props.numberbed}</span>
+						<div className="price">
+						<button onClick={Childroom}   class="btn btn-success"><Link to={'/checkout'} className="nav-link">Book</Link></button>
+						</div>
 					</div>
 				</div>
 			</div>
+			
 		</>
 	);
 };

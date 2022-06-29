@@ -20,6 +20,7 @@ class Header extends Component {
                     <li className="nav-item"><Link to={'/Contact'} className="nav-link" href="#">CONTACT</Link></li>
                     <li className="nav-item"><Link to={'/Booking'} className="nav-link" href="#">BOOKING</Link></li>
                     <li className="nav-item"><Link to={'/login'} className="nav-link" href="#">LOGIN</Link></li>
+<Link to={'/checkout'} className="nav-link" href="#"></Link>
                     <li className="nav-item"><Link to={'/register'} className="nav-link" href="#">Register</Link></li>
                   </ul>
                 </div>
