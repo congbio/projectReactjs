@@ -5,6 +5,7 @@ import Booking from './page/Booking';
 import React from 'react';
 import ExLogin from './Component/login/Login';
 import ExLogout from './Component/logout/register';
+import FillInfromation from './Component/Fill/FillInfromation';
 const routes = [{
     path : '/',
 	exact : true,
@@ -19,6 +20,17 @@ const routes = [{
     path : '/Contact',
 	exact : false,
 	main : ({history})=> <Contact history={history} />
+},
+
+{
+    path : '/Booking',
+	exact : false,
+	main : ({history})=> <Booking history={history} />
+},
+{
+    path : '/checkout',
+	exact : false,
+	main : ({history})=> <FillInfromation history={history} />
 },
 
 {
