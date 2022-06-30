@@ -38,8 +38,7 @@ function App() {
         
     )
   };
-  console.log(address, ' ', priceFilter, ' ');
-  console.log(listProduct);
+  
   useEffect(() => {
     getData();
   }, []);

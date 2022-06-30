@@ -28,17 +28,18 @@ function Showroom() {
         
         {
           listProduct
-            .map((product, index) => (
+            .map((product, index) => 
               <Childroom
+                key = {index}
                 image={product.image}
                 name={product.name}
                 price={product.price}
                 numberbed={product.numberbed}
                 area={product.area}
                 description={product.description}
-                key={index}
+                id ={product.id}
               />
-            ))
+            )
         }
       </div>
     </>

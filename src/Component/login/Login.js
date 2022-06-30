@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import '../../css/styleLogin.css'
 import Home from "../../page/Home";
 import axios from "axios";
+import { Link } from "react-router-dom";
 const apiacount = 'https://62b13ad7196a9e987031ac4a.mockapi.io/account';
  
 const ExLogin =()=> {
@@ -26,6 +27,7 @@ const ExLogin =()=> {
         uname: "invalid username",
         pass: "invalid password"
     };
+    
 
     const handleSubmit = (event) => {
         //Prevent page reload
@@ -45,40 +47,41 @@ const ExLogin =()=> {
                 console.log(listUser[i].email);
                 break;
             }
-            else{
-                if (listUser[i].password !== pass.value) {
-                    // Invalid password
-                    setErrorMessages({ name: "pass", message: errors.pass });
-                }
-                else {
-                    // Username not found
-                    setErrorMessages({ name: "uname", message: errors.uname });
-                }
-            }
+            
         }
+       
+       alert("Kiểm tra lại tài khoản của bạn!");
+            
 
         // Compare user info
     };
-
+        
     // Generate JSX code for error message
     const renderErrorMessage = (name) =>
         name === errorMessages.name && (
             <div className="error">{errorMessages.message}</div>
         );
          const renderForm = (
-            <div class="login-page">
-            <div class="form_login">
-                <form class="login-form" onSubmit={handleSubmit}>
-                <h1><strong>Login</strong> </h1>
-                    <input type="text" placeholder="UserName"  name="uname" />
-                  
-                    <input type="password" placeholder="Password" name="pass"  />
-                    <button  type="submit">login</button>
-                    <p class="message">Not registered? <a href="http://localhost:4000/logout">Create an account</a></p>
-                </form>
-            </div>
-        </div>
-    );
+						<div className="login-page">
+							<div className="form_login">
+								<form className="login-form" onSubmit={handleSubmit}>
+									<h1>
+										<strong>Login</strong>{" "}
+									</h1>
+									<input type="text" placeholder="UserName" name="uname" />
+
+									<input type="password" placeholder="Password" name="pass" />
+									<button type="submit">login</button>
+									<p className="message">
+										Not registered?{" "}
+										<Link to={"/register"} className="nav-link" href="#">
+											Create an account
+										</Link>{" "}
+									</p>
+								</form>
+							</div>
+						</div>
+					);
     return (
         <>
         <div className="app">

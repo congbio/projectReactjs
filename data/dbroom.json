@@ -1,5 +1,6 @@
 [
 	{
+		"id":1,
 		"status":true,
 		"name": "Phòng 1",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
@@ -8,7 +9,8 @@
 		"description":"ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
 		"numberbed":"1 Giường đôi"
 	},
-	{
+	{ 
+		"id":2,
 		"status":true,
 		"name": "Phòng 2",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
@@ -17,7 +19,8 @@
 		"description":"ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
 		"numberbed":"Giường đôi"
 	},
-	{
+	{ 
+		"id":3,
 		"status":true,
 		"name": "Phòng 3",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
