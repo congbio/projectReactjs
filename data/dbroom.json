@@ -1,33 +1,122 @@
 [
 	{
-		"id":1,
-		"status":true,
+		"id": 1,
+		"status": true,
 		"name": "Phòng 1",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
 		"price": "1.274.859 ₫",
-		"area":"80m²",
-		"description":"ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
-		"numberbed":"1 Giường đôi"
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "1 Giường đôi"
 	},
-	{ 
-		"id":2,
-		"status":true,
+	{
+		"id": 2,
+		"status": true,
 		"name": "Phòng 2",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
 		"price": "1.274.859 ₫",
-		"area":"80m²",
-		"description":"ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
-		"numberbed":"Giường đôi"
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
 	},
-	{ 
-		"id":3,
-		"status":true,
+	{
+		"id": 3,
+		"status": true,
 		"name": "Phòng 3",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
 		"price": "1.274.859 ₫",
-		"area":"80m²",
-		"description":"ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
-		"numberbed":"Giường đôi"
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 4,
+		"status": false,
+		"name": "Phòng 4",
+		"image": "https://vinastay.com/FILES/source/hotels/Sunny%20Mountain%20Hotel/%E1%BA%A2nh%20chung/Sunny-Mountain-Hotel-20.jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "1 Giường đôi"
+	},
+	{
+		"id": 5,
+		"status": true,
+		"name": "Phòng 5",
+		"image": "https://d3tosvr3yotk6r.cloudfront.net/Content/UserUploads/Images/Hotels/5/1549/Rooms/4574/medium_56237886%20(1).jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 6,
+		"status": false,
+		"name": "Phòng 6",
+		"image": "https://hotel24h.net/data/news/3225/139239252.jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 7,
+		"status": true,
+		"name": "Phòng 7",
+		"image": "https://hotel24h.net/data/news/3241/dbl2-1524589.jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "1 Giường đôi"
+	},
+	{
+		"id": 8,
+		"status": true,
+		"name": "Phòng 8",
+		"image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/290852643.jpg?k=70e684a9215d79169826c7dc5d8e48da37bc9dc44a0d93214e7899eda549133d&o=&hp=1",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 9,
+		"status": false,
+		"name": "Phòng 9",
+		"image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/252636424.jpg?k=141a2765cc0ad86a17338b9fc48a52ea58592f3006a431f6d9197ce0d9be0b0e&o=&hp=1",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 10,
+		"status": true,
+		"name": "Phòng 10",
+		"image": "https://pix10.agoda.net/hotelImages/178/178656/178656_15061813290029900817.jpg?ca=13&ce=1&s=1024x768",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "1 Giường đôi"
+	},
+	{
+		"id": 11,
+		"status": true,
+		"name": "Phòng 11",
+		"image": "https://images.foody.vn/res/g12/113314/prof/s640x400/foody-mobile-102-1-jpg-585-635648678061581675.jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
+	},
+	{
+		"id": 12,
+		"status": true,
+		"name": "Phòng 12",
+		"image": "https://media.foody.vn/res/g18/175093/prof/s/foody-mobile-rdm2-jpg-771-635800042150045480.jpg",
+		"price": "1.274.859 ₫",
+		"area": "80m²",
+		"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+		"numberbed": "Giường đôi"
 	}
-
 ]
