@@ -10,7 +10,6 @@ const ExLogin =()=> {
 
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
-    // User Login info
     const [listUser, setlistUser] = useState([]);
     const getData = () => {
         axios.get(apiacount).then((res) => {
@@ -30,15 +29,8 @@ const ExLogin =()=> {
     
 
     const handleSubmit = (event) => {
-        //Prevent page reload
         event.preventDefault();
-
         var { uname, pass } = document.forms[0];
-
-        // Find user login info
-        // const userData = listUser.find((user) => user.username === uname.value);
-        // console.log(uname.value,">>>>>>>>>>>>",pass.value);
-
         for (var i = 0; i < listUser.length; i++) {
             if (uname.value == listUser[i].username && pass.value == listUser[i].password) {
                 setIsSubmitted(true);

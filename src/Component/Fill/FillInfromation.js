@@ -5,31 +5,44 @@ const FillInfromation = () => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [phone, setPhone] = useState('');
-	const [address, setaddress] = useState('');
+	const [dateinput, setadateinput] = useState('');
+	const [dateoutput, setdateoutput] = useState("");
 	const [listProduct, setListProduct] = useState([]);
+	var itemroom ={};
 	const checkInput = () => {
-		if (name == "" || email == "" || phone == "" || address == "") {
+		if (name == "" || email == "" || phone == "" || dateinput == "") {
 			return true;
 		}
 
 	}
 
-	const itemroom ={};
-	const checkObject = Object.values(itemroom).length === 0
-	console.log(checkObject);
+	
+	const getobject = ()=>{
+		const idroom = localStorage.getItem("idroom");
+
+		itemroom = listProduct.find((item) => item.id === parseInt(idroom));
+	}
+	
+	const changeStatus = () => {
+		const id = localStorage.getItem("idroom");
+		itemroom = {...itemroom, status: false }
+		axios.put(`http://localhost:3000/room/${id}`, itemroom).then((res) => {
+			console.log('update object success!');
+		});
+
+	}
+	
 	
 	 
 	const handleSubmit = (event) => {
-		
-		
 		event.preventDefault();
+		 
 		if (checkInput() == true) {
 			alert("Hãy nhập đầy đủ thông tin!");
-			
-			 
-			
 		}
 		else {
+			getobject();
+			changeStatus(); 
 			const today = new Date();
 			const date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 			
@@ -37,40 +50,39 @@ const FillInfromation = () => {
 				name: name,
 				email: email,
 				phone: phone,
-				address: address,
+				dateinput: dateinput,
+				dateoutput: dateoutput,
 				namehotel: itemroom.name,
 				area: itemroom.name,
 				description: itemroom.description,
 				image: itemroom.image,
 				numberbed: itemroom.numberbed,
 				price: itemroom.price,
-				date:date
-			}
-			console.log(objectbooking);
-
-			  
+				date: date,
+			};
+			axios
+				.post("http://localhost:3000/bookingroom", objectbooking)
+				.then((res) => {
+					console.log("post object success!");
+				});
+			
 		}
-		
- 
-
-
 	}
 	
 
 	const getData = () => {
 		axios.get("http://localhost:3000/room").then((res) => {
 			setListProduct(res.data);
-			const idroom = localStorage.getItem('idroom');
-			const itemroom = listProduct.find((item) => item.id === parseInt(idroom));
+
 		});
+		
+		
 	};
-
-
-
-
+	
 
 	useEffect(() => {
 		getData();
+	
 	}, []);
 	return (
 		<div className="container  bg-default">
@@ -80,7 +92,7 @@ const FillInfromation = () => {
 						<div className="form-row">
 							<h2 className="text-center">Điền thông tin</h2>
 							<div className="form-group ">
-								<label htmlFor="inputEmail4">Email</label>
+								<label htmlFor="inputEmail4">Cong</label>
 								<input
 									onChange={(e) => setName(e.target.value)}
 									type="name"
@@ -113,13 +125,23 @@ const FillInfromation = () => {
 							</div>
 						</div>
 						<div className="form-group">
-							<label htmlFor="inputAddress">Địa chỉ</label>
+							<label htmlFor="inputAddress">Check-in date</label>
 							<input
-								onChange={(e) => setaddress(e.target.value)}
-								type="text"
+								onChange={(e) => setadateinput(e.target.value)}
+								type="date"
 								className="form-control p-2 mb-2"
 								id="inputAddress"
-								placeholder="nhập địa chỉ "
+								placeholder="ngay nhan "
+							/>
+						</div>
+						<div className="form-group">
+							<label htmlFor="inputAddress">Check-out date</label>
+							<input
+								onChange={(e) => setdateoutput(e.target.value)}
+								type="date"
+								className="form-control p-2 mb-2"
+								id="inputAddress"
+								placeholder="ngay tra"
 							/>
 						</div>
 
@@ -129,23 +151,21 @@ const FillInfromation = () => {
 					</form>
 				</div>
 				<div className="col-md-6 shadow p-5     mt-5 mb-5 bg-white rounded">
-
-
 					<div className="bg-light rounded d-flex flex-column">
 						<div className="p-2 ml-3">
 							<h4>Detail Room</h4>
 						</div>
 						<div className="p-2 d-flex">
-							<div className="col-8">  Price</div>
-							{console.log(itemroom.price)}
-							<div className="ml-auto">{checkObject? itemroom.price :'----------' }</div>
+							<div className="col-8"> Price</div>
+							{/* {console.log('price is:',itemroom.price)} */}
+							<div className="ml-auto"></div>
 						</div>
 						<div className="p-2 d-flex">
-							<div className="col-8">  Name</div>
+							<div className="col-8"> Name</div>
 							{/* <div className="ml-auto">{itemroom.name}</div> */}
 						</div>
 						<div className="p-2 d-flex">
-							<div className="col-8">  Area</div>
+							<div className="col-8"> Area</div>
 							{/* <div className="ml-auto">{itemroom.area}</div> */}
 						</div>
 						<div className="p-2 d-flex">
@@ -195,7 +215,6 @@ const FillInfromation = () => {
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
