@@ -3,7 +3,7 @@ import '../../css/styleLogin.css'
 import Home from "../../page/Home";
 import axios from "axios";
 import { Link } from "react-router-dom";
-const apiacount = 'https://62b13ad7196a9e987031ac4a.mockapi.io/account';
+const apiacount = 'http://localhost:3000/account';
  
 const ExLogin =()=> {
 

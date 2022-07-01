@@ -18,29 +18,29 @@ const routes = [{
 },
 {
     path : '/Contact',
-	exact : false,
+	exact : true,
 	main : ({history})=> <Contact history={history} />
 },
 
 {
     path : '/Booking',
-	exact : false,
+	exact : true,
 	main : ({history})=> <Booking history={history} />
 },
 {
     path : '/checkout',
-	exact : false,
+	exact : true,
 	main : ({history})=> <FillInfromation history={history} />
 },
 
 {
     path : '/login',
-	exact : false,
+	exact : true,
 	main : ({history})=> <ExLogin history={history} />
 },
 {
     path : '/register',
-	exact : false,
+	exact : true,
 	main : ({history})=> <ExLogout history={history} />
 },
 {

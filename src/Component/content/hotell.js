@@ -5,10 +5,10 @@ import React, { useEffect } from "react";
 import Card from "./conten/child";
 
 const priceFilters = [
-	{from: 100000, to:300000},
-	{from: 300000, to:500000},
-	{from: 500000, to:1000000},
-	{from: 1000000, to:5000000},
+  { from: 100000, to: 300000 },
+  { from: 300000, to: 500000 },
+  { from: 500000, to: 1000000 },
+  { from: 1000000, to: 5000000 },
 ]
 function App() {
   const [address, setaddress] = useState("");
@@ -22,7 +22,7 @@ function App() {
       setListProduct(res.data);
     });
   };
-	
+
 
 
   const handleSubmit = (event) => {
@@ -30,15 +30,15 @@ function App() {
     event.preventDefault();
     getData();
     setListProduct(listProduct
-                    .filter(product => address !== "" ? product.address.includes(address) : true)
-										.filter(product => namehotel !== "" ? product.name.includes(namehotel) : true)
-										.filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >= 
-										  priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
-                    )
-        
+      .filter(product => address !== "" ? product.address.includes(address) : true)
+      .filter(product => namehotel !== "" ? product.name.includes(namehotel) : true)
+      .filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >=
+        priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
+      )
+
     )
   };
-  
+
   useEffect(() => {
     getData();
   }, []);
@@ -77,16 +77,16 @@ function App() {
                 <span className="icon-person" />
                 <select id="number-of-person" className="form-control" onChange={(e) => setPriceFilter(e.target.value)}>
                   <option value>Price</option>
-                  <option value ='0'>100.000 - 300.000VND</option>
-                  <option value ='1'>300.000 - 500.000VND</option>
-                  <option value ='2'>500.000 - 1.000.000VND</option>
-                  <option value ='3'>1.000.000 - 5.000.000VND</option>
+                  <option value='0'>100.000 - 300.000VND</option>
+                  <option value='1'>300.000 - 500.000VND</option>
+                  <option value='2'>500.000 - 1.000.000VND</option>
+                  <option value='3'>1.000.000 - 5.000.000VND</option>
                 </select>
               </div>
             </div>
             <div className="col-lg-3">
               <button
-                type="submit" className="btn btn-warning text-center" 
+                type="submit" className="btn btn-warning text-center"
                 style={{ width: "100px", height: "30px", marginLeft: "45%" }}
               >
                 Find now
@@ -94,24 +94,20 @@ function App() {
             </div>
           </div>
         </form>
-        <div>
-          <h1>{address}</h1>
-          {namehotel}
-          {priceFilter}
-        </div>
+       
         <div className="row">
           {
-					listProduct
-					.map((product, index) => (
-						<Card
-							image={product.image}
-							name={product.name}
-							price={product.price}
-							linkname={product.linkname}
-							address={product.address}
-              key={index}
-						/>
-					))
+            listProduct
+              .map((product, index) => (
+                <Card
+                  image={product.image}
+                  name={product.name}
+                  price={product.price}
+                  linkname={product.linkname}
+                  address={product.address}
+                  key={index}
+                />
+              ))
           }
         </div>
       </div>

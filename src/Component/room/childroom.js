@@ -7,8 +7,17 @@ const Childroom = (props) => {
 
 	const bookingRoom = (id) => {
 
-		console.log("thành công");
-		localStorage.setItem("idroom", id);
+		if (localStorage.getItem("username") == undefined || localStorage.getItem("username")== null && localStorage.getItem("username")=="")
+		{
+			alert("you have to register account!")
+			window.location.assign('http://localhost:4000/register');
+			
+		}
+		else{
+			window.location.assign('http://localhost:4000/checkout');
+
+			localStorage.setItem("idroom", id);
+		}
 
 	}
 	return (
@@ -25,9 +34,8 @@ const Childroom = (props) => {
 							<p className="card-text"><span>{props.description}</span></p>
 							<a href="#" className="btn btn-warning"
 								onClick={() => bookingRoom(props.id)}>
-								<Link to={"/checkout"} className="nav-link">
+								
 									Book
-								</Link>
 
 							</a>
 						</div>
