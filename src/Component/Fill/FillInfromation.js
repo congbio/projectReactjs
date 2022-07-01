@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Button } from 'react-bootstrap';
+import { Modal } from "react-bootstrap";
+
 
 const FillInfromation = () => {
 	const [name, setName] = useState('');
@@ -8,45 +11,49 @@ const FillInfromation = () => {
 	const [dateinput, setadateinput] = useState('');
 	const [dateoutput, setdateoutput] = useState("");
 	const [listProduct, setListProduct] = useState([]);
-	var itemroom ={};
+	var itemroom = {};
 	const checkInput = () => {
 		if (name == "" || email == "" || phone == "" || dateinput == "") {
 			return true;
 		}
 
 	}
+	const [show, setShow] = useState(false);
 
-	
-	const getobject = ()=>{
+	const handleClose = () => setShow(false);
+
+
+
+	const getobject = () => {
 		const idroom = localStorage.getItem("idroom");
 
 		itemroom = listProduct.find((item) => item.id === parseInt(idroom));
 		console.log(itemroom);
 	}
-	
+
 	const changeStatus = () => {
 		const id = localStorage.getItem("idroom");
-		itemroom = {...itemroom, status: false }
+		itemroom = { ...itemroom, status: false }
 		axios.put(`http://localhost:3000/room/${id}`, itemroom).then((res) => {
 			console.log('update object success!');
 		});
 
 	}
-	
-	
-	 
+
+
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		 
+
 		if (checkInput() == true) {
 			alert("Hãy nhập đầy đủ thông tin!");
 		}
 		else {
 			getobject();
-			changeStatus(); 
+			changeStatus();
 			const today = new Date();
-			const date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-			
+			const date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+
 			const objectbooking = {
 				name: name,
 				email: email,
@@ -65,26 +72,28 @@ const FillInfromation = () => {
 				.post("http://localhost:3000/bookingroom", objectbooking)
 				.then((res) => {
 					console.log("post object success!");
+					setShow(true)
+
 				});
-			
+
 		}
 	}
-	
+
 
 	const getData = () => {
 		axios.get("http://localhost:3000/room").then((res) => {
 			setListProduct(res.data);
 
 		});
-		
-		
+
+
 	};
-	
+
 
 	useEffect(() => {
 		getData();
 		getobject()
-	
+
 	}, []);
 	return (
 		<div className="container  bg-default">
@@ -159,7 +168,7 @@ const FillInfromation = () => {
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Price</div>
-							{console.log('price is:',itemroom.price)}
+							{console.log('price is:', itemroom.price)}
 							<div className="ml-auto"></div>
 						</div>
 						<div className="p-2 d-flex">
@@ -185,11 +194,25 @@ const FillInfromation = () => {
 							</div>
 							<div className="ml-auto">$40.00</div>
 						</div>
-						
-						
+
+
 					</div>
 				</div>
 			</div>
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header closeButton>
+					<Modal.Title>{name}</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>{itemroom.name}</Modal.Body>
+				<Modal.Footer>
+					<Button variant="secondary" onClick={handleClose}>
+						Close
+					</Button>
+					<Button variant="primary" onClick={handleClose}>
+						Save Changes
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</div>
 	);
 };
