@@ -13,33 +13,36 @@ const priceFilters = [
 function App() {
   const [address, setaddress] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
+
   const [namehotel, setnamehotel] = useState("");
   const [listProduct, setListProduct] = useState([]);
-
+  const [listProductSearch, setListProductSearch] = useState([]);
 
   const getData = () => {
     axios.get("http://localhost:3000/hotel").then((res) => {
       setListProduct(res.data);
+      setListProductSearch(res.data)
     });
   };
 	
+	const ProcessPrice =()=>{
 
+	}
 
   const handleSubmit = (event) => {
     //Prevent page reload
     event.preventDefault();
-    getData();
-    setListProduct(listProduct
+    setListProductSearch(listProduct
                     .filter(product => address !== "" ? product.address.includes(address) : true)
 										.filter(product => namehotel !== "" ? product.name.includes(namehotel) : true)
-										.filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >= priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
+										.filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >= 
+										  priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
                     )
                     
-        
     )
-    console.log(listProduct);
   };
-  
+  console.log(address, ' ', priceFilter, ' ');
+  console.log(listProduct);
   useEffect(() => {
     getData();
   }, []);
@@ -87,7 +90,7 @@ function App() {
             </div>
             <div className="col-lg-3">
               <button
-                type="submit" className="btn btn-warning text-center" 
+                type="submit" className="btn btn-info text-center" 
                 style={{ width: "100px", height: "30px", marginLeft: "45%" }}
               >
                 Find now
@@ -101,8 +104,9 @@ function App() {
           {priceFilter}
         </div>
         <div className="row">
+					{console.log(namehotel)}
           {
-					listProduct
+					listProductSearch
 					.map((product, index) => (
 						<Card
 							image={product.image}
