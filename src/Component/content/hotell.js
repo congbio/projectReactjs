@@ -86,7 +86,7 @@ function App() {
             </div>
             <div className="col-lg-3">
               <button
-                type="submit" className="btn btn-info text-center" 
+                type="submit" className="btn btn-warning text-center" 
                 style={{ width: "100px", height: "30px", marginLeft: "45%" }}
               >
                 Find now

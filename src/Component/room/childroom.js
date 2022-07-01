@@ -16,7 +16,7 @@ const Childroom = (props) => {
 
 			<div className="col-lg-4" >
 				<div className="single-location mb-3">
-					<div className="card" style={{ width: '22rem' }}>
+					<div className="card" style={{ width: '26rem' }}>
 						<img src={props.image} alt="image hotel" />
 						<div className="card-body">
 							<h5 className="card-title"><a  >{props.name} </a></h5>
