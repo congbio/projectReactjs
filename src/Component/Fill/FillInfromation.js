@@ -21,6 +21,7 @@ const FillInfromation = () => {
 		const idroom = localStorage.getItem("idroom");
 
 		itemroom = listProduct.find((item) => item.id === parseInt(idroom));
+		console.log(itemroom);
 	}
 	
 	const changeStatus = () => {
@@ -82,6 +83,7 @@ const FillInfromation = () => {
 
 	useEffect(() => {
 		getData();
+		getobject()
 	
 	}, []);
 	return (
@@ -157,7 +159,7 @@ const FillInfromation = () => {
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Price</div>
-							{/* {console.log('price is:',itemroom.price)} */}
+							{console.log('price is:',itemroom.price)}
 							<div className="ml-auto"></div>
 						</div>
 						<div className="p-2 d-flex">
@@ -183,37 +185,8 @@ const FillInfromation = () => {
 							</div>
 							<div className="ml-auto">$40.00</div>
 						</div>
-						<div className="p-2 d-flex">
-							<div className="col-8">
-								Maximum out-of-pocket on Insurance Policy (not reached)
-							</div>
-							<div className="ml-auto">$6500.00</div>
-						</div>
-						<div className="border-top px-4 mx-3"></div>
-						<div className="p-2 d-flex pt-3">
-							<div className="col-8">Insurance Responsibility</div>
-							<div className="ml-auto">
-								<b>$71.76</b>
-							</div>
-						</div>
-						<div className="p-2 d-flex">
-							<div className="col-8">
-								Patient Balance{" "}
-								<span className="fa fa-question-circle text-secondary"></span>
-							</div>
-							<div className="ml-auto">
-								<b>$71.76</b>
-							</div>
-						</div>
-						<div className="border-top px-4 mx-3"></div>
-						<div className="p-2 d-flex pt-3">
-							<div className="col-8">
-								<b>Total</b>
-							</div>
-							<div className="ml-auto">
-								<b className="green">$85.00</b>
-							</div>
-						</div>
+						
+						
 					</div>
 				</div>
 			</div>
