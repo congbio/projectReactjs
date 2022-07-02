@@ -103,7 +103,7 @@ const FillInfromation = () => {
 						<div className="form-row">
 							<h2 className="text-center">Điền thông tin</h2>
 							<div className="form-group ">
-								<label htmlFor="inputEmail4">Cong</label>
+								<label htmlFor="inputEmail4">Tên</label>
 								<input
 									onChange={(e) => setName(e.target.value)}
 									type="name"
