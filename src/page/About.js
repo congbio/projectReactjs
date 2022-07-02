@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import './about.css'
-=======
-import '../css/AboutUS.css'
->>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
-class About extends Component {
 
-    render() {
-        return (
-<<<<<<< HEAD
-            <>  
-                 <div className=''>
-=======
-            <div className=''>
->>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
+import './about.css'
+import '../css/AboutUS.css'
+
+const About =()=>{
+  return(
+          <div className=''>
             <div className="aboutus">
               <h1>About Us Page</h1>
               <p>Some text about who we are and what we do.</p>
@@ -23,11 +15,11 @@ class About extends Component {
             </br>
             <br>
             </br>
-            <h2 style={{textAlign: 'center'}}>< strong>Our Team</ strong></h2>
+            <h2 style={{ textAlign: 'center' }}>< strong>Our Team</ strong></h2>
             <div className="rowus container">
               <div className="column-us">
                 <div className="card-us">
-                  <img src="image/cong.jpg" alt="CÔNG" style={{width: '100%'}} id="anh"/>
+                  <img src="image/cong.jpg" alt="CÔNG" style={{ width: '100%' }} id="anh" />
                   <div className="us-container">
                     <h2>CÔNG</h2>
                     <p className="us-title">CEO &amp; Founder</p>
@@ -39,7 +31,7 @@ class About extends Component {
               </div>
               <div className="column-us">
                 <div className="card-us">
-                  <img src="image/imaged.png" alt="ĐEN" style={{width: '100%'}} id="anh"/>
+                  <img src="image/imaged.png" alt="ĐEN" style={{ width: '100%' }} id="anh" />
                   <div className="us-container">
                     <h2>ĐEN</h2>
                     <p className="us-title">Art Director</p>
@@ -51,7 +43,7 @@ class About extends Component {
               </div>
               <div className="column-us">
                 <div className="card-us">
-                  <img src="image/imagev.png" alt="VƯ" style={{width: '100%'}}  id="anh"/>
+                  <img src="image/imagev.png" alt="VƯ" style={{ width: '100%' }} id="anh" />
                   <div className="us-container">
                     <h2>VƯ</h2>
                     <p className="us-title">Designer</p>
@@ -63,7 +55,7 @@ class About extends Component {
               </div>
               <div className="column-us">
                 <div className="card-us">
-                  <img src="image/imagep.png" alt="PHƯỢNG" style={{width: '100%'}}  id="anh"/>
+                  <img src="image/imagep.png" alt="PHƯỢNG" style={{ width: '100%' }} id="anh" />
                   <div className="us-container">
                     <h2>PHƯỢNG</h2>
                     <p className="us-title">Designer</p>
@@ -75,14 +67,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
 
-
-            </>
-=======
->>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
-        );
-    }
+  )
 }
-
 export default About;
