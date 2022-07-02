@@ -1,7 +1,11 @@
 // import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Childroom = (props) => {
+	const [listProduct, setListProduct] = useState([]);
+
 
 	// const [id, setID] = useState(null);
 
@@ -14,12 +18,27 @@ const Childroom = (props) => {
 			
 		}
 		else{
+			localStorage.setItem("idroom", id);
+			const itemroom = listProduct.find((item) => item.id === parseInt(id));
+			localStorage.setItem('itermrom', JSON.stringify(itemroom));
 			window.location.assign('http://localhost:4000/checkout');
 
-			localStorage.setItem("idroom", id);
+			
 		}
 
 	}
+	const getData = () => {
+		axios.get("http://localhost:3000/room").then((res) => {
+			setListProduct(res.data);
+
+		});
+
+
+	};
+	useEffect(() => {
+		getData();
+
+	}, []);
 	return (
 		<>
 

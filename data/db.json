@@ -1,232 +1,268 @@
 [
 	{
+
+
+		"id_hote":1,
 		"name": "Khách Sạn Mường Thanh Luxury Sông Hàn (Muong Thanh Luxury Song Han Hotel)",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
-		"address": "Hải Châu,Đà Nẵng - Xem trên bản đồ",
+		"address": "Hải Châu,Đà Nẵng",
 		"price": "1.274.859 ₫",
 		"feedback": "Nếu quay trở lại Đà Nẵng tôi tiếp tục sẽ lựa chọn khach san HAGL - bởi đây là 1 khách sạn nằm ở vị trí thuận lợi , nội thất phòng ốc đẹp, có view, giúp bạn ngắm được toàn cảnh của thành phố, nhân viên khách sạn phục vụ nhiệt tình và cởi mở."
 	},
 	{
+		"id_hote":2,
 		"name": "SeaForest Hotel by Haviland",
 		"image": "https://pix8.agoda.net/hotelImages/32355343/-1/879f9f44347c86e7289b1190d8188620.jpg?ce=0&s=450x450",
-		"address": "Phước Mỹ,Đà Nẵng - Xem trên bản đồ",
+		"address": "Phước Mỹ,Đà Nẵng",
 		"price": "399.674 ₫",
 		"feedback": ""
 	},
 	{
+		"id_hote":3,
 		"name": "CORDIAL GRAND HOTEL",
 		"image": "https://pix8.agoda.net/hotelImages/17164737/-1/3da8ad3e938332ac9825fea9218d11ea.jpg?ca=13&ce=1&s=450x450",
-		"address": "Phước Mỹ,Đà Nẵng - Xem trên bản đồ",
+		"address": "Phước Mỹ,Đà Nẵng",
 		"price": "1.269.240 ₫",
 		"feedback": ""
 	},
 	{
+		"id_hote":4,
 		"name": "IBIZA Riverfront Hotel Da Nang",
 		"image": "https://pix8.agoda.net/hotelImages/7395755/-1/471bfd680778e0251aec5139bb587056.jpg?ca=27&ce=0&s=450x450",
-		"address": "Phước Mỹ,Đà Nẵng - Xem trên bản đồ",
+		"address": "Phước Mỹ,Đà Nẵng",
 		"price": "566.671 ₫",
 		"feedback": "Tôi tình cờ biết được khách sạn IBIZA và quyết định chọn vì: khách sạn mới xây và gần cầu sông Hàn, cầu Rồng, và có hồ bơi tầng thượng. Thiết kế nội thất phong cách cổ điển, sẽ có người không thích style này, nhưng cá nhân tôi thấy hài lòng vì cảm giác ấm cúng, cổ điển nhưng vẫn hiện đại. Ngoài cơ sở vật chất và vị trí thuận tiện để di chuyển đến các điểm tham quan, tôi còn hài lòng về nhân viên ở đây. Từ chú bảo vệ, các bạn nhân viên phục vụ buffet đến bộ phận lễ tân, ai cũng mến khách và thân thiện. Gửi lời cảm ơn đến bộ phận lễ tân đã hỗ trợ tôi rất nhiệt tình, các bạn trẻ và năng động, tạo được thiện cảm rất tốt cho khách hàng khi chọn IBIZA là nơi nghỉ dưỡng khi đến Đà Nẵng. Chúc cho khách sạn ngày càng phát triển và được nhiều khách hàng biết đến, và toàn thể nhân viên khách sạn làm việc thật tốt. Hẹn một ngày gần nhất trở lại Đà Nẵng, vẫn muốn chọn IBIZA!!!"
 	},
 	{
+		"id_hote":5,
 		"name": "Khach San My Khe 2",
 		"image": "https://pix8.agoda.net/property/32755850/0/6b82064ad6ea1aa0b000a2145a978ddf.jpg?ce=0&s=450x450",
-		"address": "Phước Mỹ,Đà Nẵng - Xem trên bản đồ",
+		"address": "Phước Mỹ,Đà Nẵng",
 		"price": "",
 		"feedback": ""
 	},
 	{
+		"id_hote":6,
 		"name": "InterContinental Danang Sun Peninsula Resort",
 		"image": "https://pix8.agoda.net/hotelImages/4876733/0/5f1d581b35426c1c41f039fc7d7e333f.jpg?ca=9&ce=1&s=450x450",
-		"address": "Thọ Quang,Đà Nẵng - Xem trên bản đồ",
+		"address": "Thọ Quang,Đà Nẵng",
 		"price": "31.140.629 ₫",
 		"feedback": "Lần thứ 2 tôi trở lại Intercontinental Đà Nẵng, mọi thứ trong tôi cảm nhận về khách sạn này đều rất đẹp và tuyệt vời. Tôi sẽ trở lại khi có cơ hội. "
 	},
 	{
+		"id_hote":7,
 		"name": "Khách sạn Dana Marina (Dana Marina Boutique Hotel)",
 		"image": "https://pix8.agoda.net/hotelImages/2486094/-1/b5d9b23f063e07ea6f8f7855e9ce2cd2.jpg?ca=7&ce=1&s=450x450",
-		"address": "Phước Mỹ,Đà Nẵng - Xem trên bản đồ",
+		"address": "Phước Mỹ,Đà Nẵng",
 		"price": "767.496 ₫",
 		"feedback": "Sau khi từ Hội An về Đà Nẵng, chúng tôi vẫn lựa chọn khách sạn này. Bởi trải nghiệm ngày đầu tiên ở tại đây quá tốt. Các bạn lễ tân tư vấn nhiệt tình, thêm nữa chúng tôi được nâng cấp hạng cho cả 3 phòng (nhóm chúng tôi có 6 người), cực kì chiều khách. Đặc biệt có anh bellman (tên Hùng thì phải) tốt bụng lắm. Tôi để quên máy ảnh lúc check-out mà anh ấy mang ra tận sân bay cho tôi. Các nhân viên trong khách sạn, thân thiện, sẵn sàng giới thiệu các điểm ăn uống ngon bổ rẻ (không quảng cáo) cho chúng tôi. Về đồ ăn buffet ăn sáng không quá xuất sắc nhưng chúng tôi cũng không quan trọng khoản này lắm, có bữa sáng đầy đủ dinh dưỡng là được Có một điểm trừ nho nhỏ là chân tường ở góc phòng cạnh chân giường có vết bẩn. Tóm lại, tôi cực kì hài lòng khi ở khách sạn. Chắc chắn có quay lại vào dịp sau "
 	},
 	{
+		"id_hote":8,
 		"name": "Khu Nghỉ Dưỡng Bãi Biển Melia Đà Nẵng (Melia Danang Beach Resort)",
 		"image": "https://pix8.agoda.net/hotelImages/624200/-1/1c55bbf97facfbbc2c73b523a46d8419.jpg?ca=12&ce=1&s=450x450",
-		"address": "Hòa Hải,Đà Nẵng - Xem trên bản đồ",
+		"address": "Hòa Hải,Đà Nẵng",
 		"price": "3.251.424 ₫",
 		"feedback": "Khách sạn được quy hoạch khá tốt. Vị trí tuy xa trung tâm nhưng bù lại bãi biển rất đẹp và riêng tư. Bữa sáng phong phú. Nhân viên được đào tạo bài bản nên nụ cười luôn thường trực trên môi. Phòng KS hơi nhỏ và mình thích trải thảm hơn vì k muốn nghe tiếng dép lạch cạch trong phòng. Bể bơi rất sạch đẹp, không gian gimkid hơi nhỏ, nên đầu tư hơn nữa. Nhưng nhìn chung mình vẫn tin tưởng thương hiệu Melia..."
 	},
 	{
+		"id_hote":9,
 		"name": "Đà Nẵng - Khu nghỉ dưỡng và Spa Mikazuki Nhật Bản (Da Nang - Mikazuki Japanese Resorts and Spa)",
 		"image": "https://pix8.agoda.net/hotelImages/281223/-1/a603a62e3cf9029759cfd543aef78e2c.jpg?ce=0&s=450x450",
-		"address": "Xuân Hà,Đà Nẵng - Xem trên bản đồ",
+		"address": "Xuân Hà,Đà Nẵng",
 		"price": "3.802.940 ₫",
 		"feedback": ""
 	},
 	{
+		"id_hote":10,
 		"name": "Khu nghỉ dưỡng TIA Wellness - Bao gồm spa (TIA Wellness Resort - Spa Inclusive)",
 		"image": "https://pix8.agoda.net/hotelImages/237529/-1/494388be501eb7f65c75111de089a2bb.jpg?ca=20&ce=1&s=450x450",
-		"address": "Hòa Hải,Đà Nẵng - Xem trên bản đồ",
+		"address": "Hòa Hải,Đà Nẵng",
 		"price": "16.700.070 ₫",
 		"feedback": "Chúng tôi có kỳ nghĩ cũng hai con nhỏ thật vui vẻ, bọn trẻ rất thích hồ bơi nhỏ tại phòng nghỉ. Chất lượng và phòng spa tốt. Nhân viên rất thân thiện, vui vẻ, phục vụ chu đáo. Chúng tôi sẽ ghé lại Fusion khi đến Đà Nẵng lần tới."
 	},
 	{
+		"id_hote":11,
 		"name": "Khách Sạn Mường Thanh Luxury Sông Hàn (Muong Thanh Luxury Song Han Hotel)",
 		"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
-		"address": "Hải Châu,Đà Nẵng - Xem trên bản đồ",
+		"address": "Hải Châu,Đà Nẵng",
 		"price": "1.274.859 ₫",
 		"feedback": "Nếu quay trở lại Đà Nẵng tôi tiếp tục sẽ lựa chọn khach san HAGL - bởi đây là 1 khách sạn nằm ở vị trí thuận lợi , nội thất phòng ốc đẹp, có view, giúp bạn ngắm được toàn cảnh của thành phố, nhân viên khách sạn phục vụ nhiệt tình và cởi mở."
 	},
 	{
+		"id_hote":12,
 		"name": "Lucky Star Hotel 146 Nguyen Trai",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Gia đình tôi gồm 6 người lớn và 5 trẻ em rất cảm ơn khách sạn đã rất nhiệt tình và chu đáo. Khách sạn nằm ở phố trung tâm rất tiện cho việc ăn uống đi lại và mua sắm. Khách sạn khá sạch. Nhân viên lễ tân và bảo vệ đều nhiệt tình.",
 		"image": "https://pix8.agoda.net/hotelImages/3155614/-1/bf5ff9a5fcf2edb25d77046b9fe627f1.jpg?ca=13&ce=1&s=450x450",
 		"price": "854.685 ₫"
 	},
 	{
+		"id_hote":13,
 		"name": "La Vela Saigon Hotel",
-		"address": "Quận 3,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 3,Hồ Chí Minh",
 		"feedback": "Một lựa chọn tuyệt vời cho bất cứ ai đặt chân đến Tphcm, dù là đi du lịch, nghỉ dưỡng, hay công tác. Phòng khách sạn vô cùng xinh xắn, dịch vụ đáng giá 5 sao. Đặc biệt có bể bơi vô cực tuyệt đẹp view ra toàn thành phố. Chắc chắn lần sau kho vào Sg mình sẽ luôn chọn La Vela là điểm dừng chân của mình! ",
 		"image": "https://pix8.agoda.net/hotelImages/13571664/-1/a2605513eefa00554935c347d4b9de0d.jpg?ca=10&ce=1&s=450x450",
 		"price": "3.374.667 ₫"
 	},
 	{
+		"id_hote":14,
 		"name": "Khách sạn Mường Thanh khách sạn Sài Gòn sang trọng (Khach san Muong Thanh Luxury Saigon Hotel)",
-		"address": "Phú Nhuận,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Phú Nhuận,Hồ Chí Minh",
 		"feedback": "Ăn sáng ngon, nội thất tiện nghi, phòng ốc sạch sẽ, Nhân viên dễ thương nhiệt tình. Rất đáng ở. Đi lại sân bay và trung tâm tiện lợi",
 		"image": "https://pix8.agoda.net/hotelImages/16260062/-1/b1ccdf52183030e3aacf58476442344c.jpg?ca=13&ce=1&s=450x450",
 		"price": "1.596.780 ₫"
 	},
 	{
+		"id_hote":15,
 		"name": "The Chill Suites- Trung Tâm Thành phố (The Chill Suites- City Center )",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "가격 대비 최고의 호텔입니다. 방은 매우 깨끗하고 손님에게 세심한주의를 기울였습니다. 모든 직원은 매우 친절하며 고객을 위해 최선을 다합니다. 호치민에 다시 가면 분명히 여기에 머무를 것입니다. 이 호텔의 모든 것에 감사드립니다. Là khách sạn tốt nhất so với giá cả. Phòng rất sạch sẽ và cho thấy sự quan tâm tỉ mỉ dành cho khách hàng. Tất cả các staff rất thân thiện và cố gắng hết sức cho khách hàng. Nếu tôi lại đi đến Hồ Chí Minh, nhất định sẽ ở đây. Tôi cảm ơn vì tất cả mọi thứ trong khách sạn này. Và tôi đã học được điều này. Hột gà nướng, hột vịt lộn. Hột vịt dữa. Trứng cút lộn. Bắp xào đây ",
 		"image": "https://pix8.agoda.net/hotelImages/7295630/-1/cc29ff8b9c5ab4e1a8009cae17f4e8ec.jpg?ca=13&ce=1&s=450x450",
 		"price": "595.675 ₫"
 	},
 	{
+		"id_hote":16,
 		"name": "Khách sạn Mường Thanh Sài Gòn Centre (Muong Thanh Saigon Centre Hotel)",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Khách sạn ngay trung tâm nên rất thuận tiện. Nhân viên cực kỳ thân thiện, các bạn nhân viên lễ tân tận tình chu đáo, nói chung là rất đáng iu. Mình ở phòng 1106 rất sạch sẽ và gần hồ bơi nên rất là thích. Nếu có dịp quay lại HCM nhất định sẽ quay lại. Cám ơn khách sạn đã cho chúng tôi kỳ nghỉ tuyệt vời.",
 		"image": "https://pix8.agoda.net/hotelImages/1032041/-1/39ff37f5b391961283f9ade4c1f2ef68.jpg?ca=17&ce=1&s=450x450",
 		"price": "1.830.691 ₫"
 	},
 	{
+		"id_hote":17,
 		"name": "Khách Sạn Blue Airport (The Blue Airport Hotel)",
-		"address": "Quận Tân Bình,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận Tân Bình,Hồ Chí Minh",
 		"feedback": "Mình đặt phòng cho ba mẹ mình dưới quê lên Sài Gòn ngủ một đêm. Khi đến nơi chỉ tầm 12h trưa thôi, khách sạn đã cho mình nhận phòng sớm 2h mà không phụ thu khoảng phí nào. Nhân viên cũng rất dễ thương, thủ tục nhanh. Ngoài ra, lễ tân đưa cho mình 2 suối, 1 nước ngọt và 1 bia heineken free. Lần đầu tiên mình gặp khách sạn tặng free nước thế. Phòng tuy hơi nhỏ nhưng lại rất đẹp và tiện nghi, phòng đẹp và mới. Có cả hoa tươi mà giá cả lại khá là tốt. Mình đặt trước cả tuần nên sale từ 515k còn 315k/1 đêm. Mức giá rất tốt so với chất lượng. Một điều rất tốt ở đây là gặp được chú bảo vệ rất dễ mến, mình đi lên xuống lấy xe đều hỏi thăm mình, rất vui vẻ. Về chú cũng chào mình. Rất mến chú :))) Nếu mình có dịp mình sẽ đặt tại khách sạn này lần nữa. ",
 		"image": "https://pix8.agoda.net/hotelImages/2817185/-1/4406a970306a452300f94532410dab2c.jpg?ca=10&ce=1&s=450x450",
 		"price": "497.559 ₫"
 	},
 	{
+		"id_hote":18,
 		"name": "Khách sạn Palace Sài Gòn (Palace Hotel Saigon)",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Tuy ở trong thời gian ngắn nhưng kỳ nghĩ này cho tôi cảm giác thoải mái, với thái độ phục vụ niềm nở và phòng ốc thoải mái đã cho tôi một kỳ nghỉ rất vui vẻ. Địa điểm khách sạn lại gần shoppings, chợ Bến Thành, Nhà hát thành phố. Ban đêm từ cửa sổ của phòng tôi có thể nhìn ra ngoài, ánh đèn lung lung, người xe tấp nập....thật thú vị.",
 		"image": "https://pix8.agoda.net/hotelImages/10985/-1/236b2a9f0a07a1cda72a8081831b7470.jpg?ca=9&ce=1&s=450x450",
 		"price": "1.466.124 ₫"
 	},
 	{
+		"id_hote":19,
 		"name": "Huong Sen Hotel",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Khách sạn tuy hơi cũ, nhưng nằm trên góc Đồng Khởi-Mạc Thị Bưởi, tiện cho việc đi lại, mua sắm.Nhâm viên khách sạn rất niềm nở, tư vấn nhiều món ăn ngon.Buổi sáng được phục vụ tốt.Khách sạn có view khá tốt nên vào buổi tối, chúng tôi uống bia trên tầng 7 của khách sạn, ngắm cảnh thoải mái. Nếu có dịp, nhất định tôi sẽ sử dụng khách sạn lần nữa.",
 		"image": "https://pix8.agoda.net/hotelImages/109/10977/10977_14090911150021964688.jpg?ca=2&ce=1&s=450x450",
 		"price": "847.942 ₫"
 	},
 	{
+		"id_hote":20,
 		"name": "Erato Boutique Hotel",
-		"address": "Quận Tân Bình,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận Tân Bình,Hồ Chí Minh",
 		"feedback": "Trang thiết bị mới phòng sạch sẽ và đầy đủ tiện nghi. Nhưng nước nóng phải xuống sảnh khách sạn lấy vì trong phòng không có bình đun nước nóng. Có hầm đậu xe hơi qua đêm, quá thuận tiện vì việc đi kiếm 1 nơi để đậu xe hơi ở Sài Gòn hơi khó khăn. ",
 		"image": "https://pix8.agoda.net/hotelImages/1619384/-1/b2a49b1a281723e31d9054eed97203a6.jpg?ca=9&ce=1&s=450x450",
 		"price": "462.218 ₫"
 	},
 	{
+
+		"id_hote":21,
 		"name": "The Luxe Hotel",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Khách sạn rất sạch, đẹp, ăn sáng rất ngon, anh đầu bếp nhiệt tình vui vẽ ra hướng dẫn từng món ăn cho mọi người. Lễ tân và phục vụ rất nhiệt tình vui vẽ. Nói chung là Khách sạn này rất tốt, tôi sẽ ở đây tiếp cho các lần công tác sau.",
 		"image": "https://pix8.agoda.net/hotelImages/443/443530/443530_14021111190018303167.jpg?ca=2&ce=1&s=450x450",
 		"price": "987.724 ₫"
 	},
 	{
+		"id_hote":22,
 		"name": "Lucky Star Hotel 146 Nguyen Trai",
-		"address": "Quận 1,Hồ Chí Minh - Xem trên bản đồ",
+		"address": "Quận 1,Hồ Chí Minh",
 		"feedback": "Gia đình tôi gồm 6 người lớn và 5 trẻ em rất cảm ơn khách sạn đã rất nhiệt tình và chu đáo. Khách sạn nằm ở phố trung tâm rất tiện cho việc ăn uống đi lại và mua sắm. Khách sạn khá sạch. Nhân viên lễ tân và bảo vệ đều nhiệt tình.",
 		"image": "https://pix8.agoda.net/hotelImages/3155614/-1/bf5ff9a5fcf2edb25d77046b9fe627f1.jpg?ca=13&ce=1&s=450x450",
 		"price": "854.685 ₫"
 	},
 	{
+		"id_hote":23,
 		"name": "M Hotel",
 		"image": "https://pix8.agoda.net/hotelImages/163/16364644/16364644_20072115450091671374.jpg?ca=12&ce=1&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "Khách sạn đẹp y hình, giường nệm mới và rộng rãi, nhân viên thân thiện, phía dưới có siêu thị mini nên khá tiện mua đồ dùng nhất là vào ban đêm (siêu thị mở tới 1h sáng), giá bán không quá đắt. View đẹp, có ban công chung để phơi giày dép. Không có thang máy nhưng cũng không quá bất tiện. Nhược điểm là ở gần trường học và trục đường lớn nên ồn và nhiều xe lớn qua lại. ",
 		"price": ""
 	},
 	{
+		"id_hote":24,
 		"name": "Swiss-Belresort Tuyen Lam Dalat",
 		"image": "https://pix8.agoda.net/hotelImages/1134714/-1/b24361db669a8571a0c7e2277a7531d2.png?ce=0&s=450x450",
-		"address": "Hồ Tuyền Lâm,Đà Lạt - Xem trên bản đồ",
+		"address": "Hồ Tuyền Lâm,Đà Lạt",
 		"feedback": "View phòng ngủ là sân golf nằm giữa thung lũng, núi bao quanh rất đẹp phòng rộng rãi, sạch sẽ và khá tiện nghi. Nếu may mắn các bạn có thể thức dậy buổi sáng với cảnh sương mù bao phủ cả thung lũng và khách sạn, hệt như ở Sapa. Buffet sáng ngon và thức ăn đa dạng, vừa ăn sắng cafe và ngắm cảnh thung lũng rất thú vị. Bữa tối rất ngon và giá hợp lý so với chuẩn 4*. Khách sạn có xe đưa đón về trung tâm Đà Lạt theo các khung giờ cố định và xe đưa đón sân bay 2 chiều rất tiện lợi, chỉ cần đặt trước với tiếp tân là sẽ được sắp xếp chu đáo. Rất hài lòng với resort này và sẽ quay lại lần sau.",
 		"price": "1.997.995 ₫"
 	},
 	{
+		"id_hote":25,
 		"name": "Terracotta Hotel and Resort Dalat",
 		"image": "https://pix8.agoda.net/hotelImages/836781/-1/852214f52b777dedaed114b71be59942.jpg?ca=9&ce=1&s=450x450",
-		"address": "Hồ Tuyền Lâm,Đà Lạt - Xem trên bản đồ",
+		"address": "Hồ Tuyền Lâm,Đà Lạt",
 		"feedback": "Cảnh quan rất đẹp. Nhiều góc chụp ảnh nên có thể bỏ qua vài địa điểm du lịch tại Đà Lạt để ở khách sạn chụp ảnh, hoa, đồi thông, hồ nước, nhà vườn... đủ cả. Nhân viên không niềm nở có thể do tính cách của người dân Đà Lạt, quán xá nào cũng thế chứ ko riêng khách sạn. Phòng sạch, trang thiết bị khá mới. Địa điểm hơi xa trung tâm nhưng đổi lại không gian yên tĩnh, trong lành, buffet sáng ngon, phong phú đồ ăn. Hài lòng! ",
 		"price": "4.362.780 ₫"
 	},
 	{
+		"id_hote":26,
 		"name": "Khách sạn Chuông Đà Lạt HANZ (HANZ Chuong Hotel Da Lat)",
 		"image": "https://pix8.agoda.net/hotelImages/14880393/-1/3bb72e1ce52da1f2d5563d40fa9c3fbb.jpg?ca=21&ce=0&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "",
 		"price": "399.558 ₫"
 	},
 	{
+		"id_hote":27,
 		"name": "Khách sạn Du Parc Đà Lạt (Du Parc Hotel Dalat)",
 		"image": "https://pix8.agoda.net/hotelImages/109/10950/10950_17030713580051407020.jpg?ca=6&ce=1&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "Nhân dịp lễ 30/4 - 1/5 tôi dẫn con tai đi Đà Lạt 4 ngày. Do quyết định khá trễ nên tôi chỉ nhờ tìm đc 1 phòng tại 1 khách sạn mini trên đường Nam Kỳ Khởi Nghĩa với giá 900k/dem (phòng này giá ngày thường tối đa là 400k). Phòng tập thể, to, 3 giường đôi nhưng hơi chán vì tiện nghị và vệ sinh có vẻ không ổn. Ở khu vực này toàn các khách sạn mini, về đêm, khi các du khách trở về khách sạn sau 1 ngày đi tham quan, trở nên rất ồn ào, náo nhiệt (toàn các anh các chú SG tụ tập ngồi nhậu lề đường đến tận 1 - 2 giờ đêm). Thật là không thích hợp với trẻ em & để nghỉ ngơi thư giãn. Vì vậy, sau 2 ngày ở đây, tôi chuyển qua Novotel Dalat (Dalat Du Parc)khi tìm thấy có 1 phòng trống trên Agoda và ở lại đây 2 ngày còn lại. Phòng standard, nhỏ nhưng bày trí khá đẹp và đầy đủ tiện nghi và nhất là rất sạch sẽ. View của phòng này không đẹp lắm vì cửa sỗ quay về phía sau khách sạn nhìn thấy nhiều khu nhà mới có cũ có khá lộn xộn. Phòng giá 1.1tr, đắt hơn 1 tí so với chỗ cũ nhưng rất đáng giá. Book qua Agoda không có phần ăn sáng. Ở khách sạn Novotel Dalat ăn sáng tại nhà hàng Bưu Điện đối diện bên đường rất tuyệt, nhất là ở Đà Lạt để tìm được 1 quán ăn ngon, sạch, ưng ý, gần khách sạn là không dễ với du khách.",
 		"price": "1.434.643 ₫"
 	},
 	{
+		"id_hote":28,
 		"name": "The Luxe Hotel Da Lat",
 		"image": "https://pix8.agoda.net/hotelImages/4942635/-1/b187d324a6a84778c776140660182c9b.jpg?ca=0&ce=1&s=450x450",
-		"address": "Hồ Tuyền Lâm,Đà Lạt - Xem trên bản đồ",
+		"address": "Hồ Tuyền Lâm,Đà Lạt",
 		"feedback": "- Khách sạn sạch sẽ, ấm cúng, nội thất đẹp, thiết bị hiện đại. Nhà mình ở phòng suite (2 phòng ngủ) cảm giác như ở nhà, rất tiện cho sinh hoạt chung của gia đình, phòng rộng rãi thoáng đãng. - Nhân viên thân thiện, nhiệt tình. - Đồ ăn sáng tuy không quá phong phú nhưng khá ngon và thay đổi mỗi ngày. - Không nằm ở trung tâm nên muốn đi ăn, chơi trong trung tâm thì hơi tốn tiền taxi, nhưng cũng không phải vấn đề quá lớn với những ai thích một không gian yên tĩnh, để nghỉ dưỡng. - Gần khách sạn có quán lẩu gà lá é rất ngon, đi bộ 3 phút là đến, xung quanh cũng nhiều quán cafe đẹp, đi bộ khoảng 5,10 phút. - Có một chút góp ý nho nhỏ với khách sạn là phòng wc nên trang bị thêm vòi xịt và lắp thêm gương đứng trong phòng ngủ. Nhất định mình sẽ giới thiệu The Luxe Hotel cho bạn bè, người quen. Và vẫn chọn ở đây nếu có dịp quay lại Đà Lạt. Hy vọng khách sạn sẽ duy trì được dịch vụ thật tốt và đón nhận những góp ý của khách hàng.",
 		"price": "1.380.975 ₫"
 	},
 	{
+		"id_hote":29,
 		"name": "Khách Sạn Capital O 585 Sài Gòn Book Đà Lạt (Capital O 585 Saigon Book Da Lat Hotel)",
 		"image": "https://pix8.agoda.net/hotelImages/10954459/-1/889b0e2fb40e8e8e14de6014417a5dd9.jpg?ca=12&ce=1&s=450x450",
-		"address": "Khu Vực Hồ Xuân Hương,Đà Lạt - Xem trên bản đồ",
+		"address": "Khu Vực Hồ Xuân Hương,Đà Lạt",
 		"feedback": "Nói chung là ổn. Với mức giá đó mà lại được vị trí khách sạn gần hồ XH, chất lượng phòng ok, nhân viên lịch sự thì lần sau mình nhất định sẽ quay lại không cần suy nghĩ. Duy chỉ có 2 thứ làm mình chưa thực sự hài lòng: - Phòng cách âm khá kém, mình thường xuyên nghe được tiếng khách nói chuyện bên ngoài hoặc tiếng phòng bên cạnh mở tivi hay nói chuyện to. Cái này mình nghĩ khách sạn cần khắc phục ngay. - Vòi xịt WC quá mạnh :( Nỗi buồn này ai thấu giữa những đêm đông :(( Nhưng 2 phần đó chỉ là 2 phần nhỏ, vẫn không ảnh hưởng đến trải nghiệm tổng thể của mình với Sài Gòn Book Đà Lạt. 9.5/10đ À với mình đặt qua Agoda có noted lấy phòng tầng cao nhưng cuối cùng chỉ có lầu 1. Không biết do phòng Superior chỉ có ở tầng 1 hay sao. Hi vọng lần sau được tầng cao hơn vì mình nghĩ view tầng cao ở khách sạn này sẽ đẹp.",
 		"price": "604.232 ₫"
 	},
 	{
+		"id_hote":30,
 		"name": "Khách sạn Colline (Hôtel Colline)",
 		"image": "https://pix8.agoda.net/hotelImages/6600618/-1/27731ed0841b4463902d36b6bb1a5805.jpg?ca=13&ce=1&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "Nhân viên thân thiện, phòng ốc sạch sẽ, gần chợ Đà Lạt. Ăn sáng ngon, đặc biệt là món súp rong biển. Sáng lạnh mà có 1 chén súp nóng ăn xong ấm cả bụng. Welcome drink là nước cốt dâu tằm hơi quá ngọt so với gia đình mình. Đối diện khách sạn có ngân hàng nên rất tiện rút tiền. Ở ngay dưới khách sạn có khu bán đồ lưu niệm, trái cây, mứt. Điểm duy nhất mình không thích đó là cứ 12h hơn là khách sạn lại tưới cây làm phòng mình nước chảy róc rách. 2 mẹ con sợ quá phải gọi lễ tân thì được biết là khách sạn tưới cây. Làm 2 đêm ở đây đều mất ngủ.",
 		"price": "2.969.246 ₫"
 	},
 	{
+		"id_hote":31,
 		"name": "Đà Lạt Wonder Resort (Dalat Wonder Resort)",
 		"image": "https://pix8.agoda.net/hotelImages/4960301/-1/eabaf793cb9b1ee1bd7a8c529b76b97f.jpg?ca=14&ce=1&s=450x450",
-		"address": "Hồ Tuyền Lâm,Đà Lạt - Xem trên bản đồ",
+		"address": "Hồ Tuyền Lâm,Đà Lạt",
 		"feedback": "KS có view hồ Tuyền Lâm khá đẹp, khung cảnh xung quanh villa cũng rất đẹp. Tuy nhiên, khách sạn mới hoàn thiện và vẫn còn đang xây dựng nên nhiều vị trí vẫn còn bề bộn nhưng vẫn chấm 5* cho cảnh quan của resort, khi hoàn thiện toàn bộ có lẽ sẽ là 1 nơi vô cùng lý tưởng để nghỉ dưỡng. Và vì KS còn mới nên dịch vụ chưa được chuyên nghiệp, vd như hành lý của khách gửi không có nhân viên đem lên tận phòng mà khách phải tự mang, KS có xe điện chở từ sảnh chính đến villa và ngược lại nhưng chỉ phục vụ lúc check in & out, hôm chúng tôi ở phải đi bộ ra sảnh để dùng bữa sáng nhưng vì khung cảnh đẹp và villa tôi ở cũng gần nên cũng không vấn đề gì. KS có xe trung chuyển vào Đà Lạt, không biết là do đông khách nên NV không phục vụ được tốt hay như nào, tôi đã gọi điện thoại đặt xe từ chiều cho chuyến tối vào TP nhưng khi đi bộ ra sảnh để đón xe thì lễ tân thông báo là đã full chỗ !?! Tuy nhiên, lễ tân cũng đã hỗ trợ chúng tôi check in sớm. ",
 		"price": "2.038.102 ₫"
 	},
 	{
+		"id_hote":32,
 		"name": "Khách sạn Le Récit Boutique Đà Lạt (Le Recit Boutique Hotel de Dalat)",
 		"image": "https://pix8.agoda.net/hotelImages/24333225/-1/72f7fd4974070fa0a2bd81dbdebc1a0f.jpg?ca=28&ce=0&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "",
 		"price": "1.927.691 ₫"
 	},
 	{
+		"id_hote":33,
 		"name": "M Hotel",
 		"image": "https://pix8.agoda.net/hotelImages/163/16364644/16364644_20072115450091671374.jpg?ca=12&ce=1&s=450x450",
-		"address": "Trung tâm Đà Lạt,Đà Lạt - Xem trên bản đồ",
+		"address": "Trung tâm Đà Lạt,Đà Lạt",
 		"feedback": "Khách sạn đẹp y hình, giường nệm mới và rộng rãi, nhân viên thân thiện, phía dưới có siêu thị mini nên khá tiện mua đồ dùng nhất là vào ban đêm (siêu thị mở tới 1h sáng), giá bán không quá đắt. View đẹp, có ban công chung để phơi giày dép. Không có thang máy nhưng cũng không quá bất tiện. Nhược điểm là ở gần trường học và trục đường lớn nên ồn và nhiều xe lớn qua lại. ",
 		"price": ""
 	}

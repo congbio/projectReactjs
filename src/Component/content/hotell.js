@@ -98,11 +98,7 @@ function App() {
             </div>
           </div>
         </form>
-        <div>
-          <h1>{address}</h1>
-          {namehotel}
-          {priceFilter}
-        </div>
+        
         <div className="row">
 					{console.log(namehotel)}
           {

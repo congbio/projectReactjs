@@ -11,7 +11,7 @@ const Card = (props) => {
 							<h5 className="card-title"><Link to={"/Booking"} className="nav-link" href="#">
 							<p class="text-info"><h4>{props.name}</h4></p>
 							</Link></h5>
-							<b className="card-text">Giá: </b><span>{props.price}</span>
+							<b className="card-text">  </b><span>{props.address}</span>
 
 						</div>
 					</div>

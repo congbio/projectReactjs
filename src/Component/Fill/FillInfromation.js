@@ -7,12 +7,15 @@ import emailjs from '@emailjs/browser';
 
 
 const FillInfromation = () => {
+	const id = localStorage.getItem("idroom");
 	const [name, setName] = useState(localStorage.getItem('username'));
 	const [email, setEmail] = useState(localStorage.getItem('email'));
 	const [phone, setPhone] = useState('');
 	const [dateinput, setadateinput] = useState('');
 	const [dateoutput, setdateoutput] = useState("");
 	const [listProduct, setListProduct] = useState([]);
+	const itermrom = localStorage.getItem('itermrom');
+	console.log("thành cong:",itermrom);
 	// document.getElementById('inputEmail4').value = name;
 	// document.getElementById('inputEmail4').value = name;
 	var itemroom = {};
@@ -75,7 +78,7 @@ const FillInfromation = () => {
 			};
 			emailjs.send('service_0janfsk', 'template_piopgc2', objectbooking, 'user_5KiMCYtNrqLlFbsDxXynH')
 				.then((result) => {
-					alert("Đang ký thành công !!");
+				alert("Đạt phòng thành công!")
 					axios
 						.post("http://localhost:3000/bookingroom", objectbooking)
 						.then((res) => {
@@ -179,20 +182,20 @@ const FillInfromation = () => {
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Price</div>
-							{console.log('price is:', itemroom.price)}
-							<div className="ml-auto"></div>
+							{console.log('price is:', id)}
+							<div className="ml-auto">{itermrom.price}</div>
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Name</div>
-							{/* <div className="ml-auto">{itemroom.name}</div> */}
+							<div className="ml-auto">{itermrom.name}</div>
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Area</div>
-							{/* <div className="ml-auto">{itemroom.area}</div> */}
+							<div className="ml-auto">{itermrom.name}</div>
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> image </div>
-							{/* <div className="ml-auto"><img src="{itemroom.area}"/></div> */}
+							<img src="{itermrom.image}"/>
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8">Copayment</div>
