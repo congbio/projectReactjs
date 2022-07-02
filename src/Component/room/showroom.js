@@ -23,9 +23,7 @@ function Showroom() {
 
   return (
     <>
-      <div className="row">
-        <h2>cong</h2>
-        
+      <div className="row mt-5">  
         {
           listProduct
             .map((product, index) => 

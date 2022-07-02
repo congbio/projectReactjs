@@ -3,18 +3,20 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
 	return (
 		<>
-			<div  className="col-lg-4">
+			<div className="col-lg-4 " >
 				<div className="single-location mb-3">
-					<img src={props.image} alt="image hotel" />
-					<div className="location-contents">
-						<Link to={"/Booking"} className="nav-link" href="#">
-							<h3>{props.name}</h3>
-						</Link>
+					<div className="card" style={{ width: '26rem' }}>
+						<img src={props.image} alt="image hotel" />
+						<div className="card-body">
+							<h5 className="card-title"><Link to={"/Booking"} className="nav-link" href="#">
+							<p class="text-info"><h4>{props.name}</h4></p>
+							</Link></h5>
+							<b className="card-text">Giá: </b><span>{props.price}</span>
 
-						<div className="price">
-							Started from<span>{props.price}</span>{" "}
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</>

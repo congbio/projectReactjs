@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 
 const ExLogout = () => {
     const apiaccount = "http://localhost:3000/account";
- 
     const [isSubmitted, setIsSubmitted] = useState(false);
     // User Login info
     const [listUser, setlistUser] = useState([]);

@@ -16,33 +16,28 @@ function App() {
 
   const [namehotel, setnamehotel] = useState("");
   const [listProduct, setListProduct] = useState([]);
-  const [listProductSearch, setListProductSearch] = useState([]);
 
   const getData = () => {
     axios.get("http://localhost:3000/hotel").then((res) => {
       setListProduct(res.data);
-      setListProductSearch(res.data)
     });
   };
 	
-	const ProcessPrice =()=>{
+	// const ProcessPrice =()=>{
 
-	}
+	// }
 
   const handleSubmit = (event) => {
     //Prevent page reload
     event.preventDefault();
-    setListProductSearch(listProduct
-                    .filter(product => address !== "" ? product.address.includes(address) : true)
+    setListProduct(listProduct
 										.filter(product => namehotel !== "" ? product.name.includes(namehotel) : true)
 										.filter(product => priceFilter !== "" ? product.price.replace(/[^0-9]/g, '') >= 
-										  priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true
-                    )
-                    
+										priceFilters[priceFilter].from && product.price.replace(/[^0-9]/g, '') <= priceFilters[priceFilter].to : true)
+                    .filter(product => address !== "" ? product.address.includes(address) : true)
     )
   };
-  console.log(address, ' ', priceFilter, ' ');
-  console.log(listProduct);
+
   useEffect(() => {
     getData();
   }, []);
@@ -90,7 +85,7 @@ function App() {
             </div>
             <div className="col-lg-3">
               <button
-                type="submit" className="btn btn-info text-center" 
+                type="submit" class="btn btn-warning" 
                 style={{ width: "100px", height: "30px", marginLeft: "45%" }}
               >
                 Find now
@@ -105,17 +100,26 @@ function App() {
         </div>
         <div className="row">
 					{console.log(namehotel)}
-          {
-					listProductSearch
-					.map((product, index) => (
+          {namehotel == "" ? (
+            listProduct.map((product) => (
+              <Card
+                image={product.image}
+                name={product.name}
+                price={product.price}
+                linkname={product.linkname}
+                address={product.address}
+              ></Card>
+            ))
+          ) : 
+					listProduct
+					.map((product) => (
 						<Card
 							image={product.image}
 							name={product.name}
 							price={product.price}
 							linkname={product.linkname}
 							address={product.address}
-              key={index}
-						/>
+						></Card>
 					))
           }
         </div>

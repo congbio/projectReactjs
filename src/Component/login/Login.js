@@ -3,7 +3,7 @@ import '../../css/styleLogin.css'
 import Home from "../../page/Home";
 import axios from "axios";
 import { Link } from "react-router-dom";
-const apiacount = 'https://62b13ad7196a9e987031ac4a.mockapi.io/account';
+const apiacount = 'http://localhost:3000/account';
  
 const ExLogin =()=> {
 
@@ -31,18 +31,27 @@ const ExLogin =()=> {
     const handleSubmit = (event) => {
         event.preventDefault();
         var { uname, pass } = document.forms[0];
+        const status = false;
         for (var i = 0; i < listUser.length; i++) {
             if (uname.value == listUser[i].username && pass.value == listUser[i].password) {
                 setIsSubmitted(true);
                 localStorage.setItem("username",uname.value);
                 localStorage.setItem("email",listUser[i].email);
+                status =true;
                 console.log(listUser[i].email);
                 break;
             }
             
         }
+        if(!status){
+
+            alert("Kiểm tra lại tài khoản của bạn!");
+        }
+        return;
+        
+
+        
        
-       alert("Kiểm tra lại tài khoản của bạn!");
             
 
         // Compare user info

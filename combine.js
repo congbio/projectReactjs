@@ -1,5 +1,5 @@
-const hotel = require('./data/db.json');
 const room = require('./data/dbroom.json');
+const hotel = require('./data/db.json');
 const account = require('./data/dbaccount.json');
 const bookingroom = require("./data/bookingroom.json");
 

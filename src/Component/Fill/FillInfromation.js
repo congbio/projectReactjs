@@ -1,51 +1,63 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Button } from 'react-bootstrap';
+import { Modal } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
+
+
 
 const FillInfromation = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
+	const [name, setName] = useState(localStorage.getItem('username'));
+	const [email, setEmail] = useState(localStorage.getItem('email'));
 	const [phone, setPhone] = useState('');
 	const [dateinput, setadateinput] = useState('');
 	const [dateoutput, setdateoutput] = useState("");
 	const [listProduct, setListProduct] = useState([]);
-	var itemroom ={};
+	// document.getElementById('inputEmail4').value = name;
+	// document.getElementById('inputEmail4').value = name;
+	var itemroom = {};
 	const checkInput = () => {
 		if (name == "" || email == "" || phone == "" || dateinput == "") {
 			return true;
 		}
 
 	}
+	const [show, setShow] = useState(false);
 
-	
-	const getobject = ()=>{
+	const handleClose = () => setShow(false);
+
+
+
+	const getobject = () => {
 		const idroom = localStorage.getItem("idroom");
 
 		itemroom = listProduct.find((item) => item.id === parseInt(idroom));
+		console.log(itemroom);
 	}
-	
+
 	const changeStatus = () => {
 		const id = localStorage.getItem("idroom");
-		itemroom = {...itemroom, status: false }
+		itemroom = { ...itemroom, status: false }
 		axios.put(`http://localhost:3000/room/${id}`, itemroom).then((res) => {
 			console.log('update object success!');
 		});
 
 	}
-	
-	
-	 
+
+
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		 
+
 		if (checkInput() == true) {
 			alert("Hãy nhập đầy đủ thông tin!");
 		}
 		else {
 			getobject();
-			changeStatus(); 
+			changeStatus();
 			const today = new Date();
-			const date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-			
+			const date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+
 			const objectbooking = {
 				name: name,
 				email: email,
@@ -54,35 +66,45 @@ const FillInfromation = () => {
 				dateoutput: dateoutput,
 				namehotel: itemroom.name,
 				area: itemroom.name,
+				price: itemroom.price,
 				description: itemroom.description,
 				image: itemroom.image,
 				numberbed: itemroom.numberbed,
 				price: itemroom.price,
 				date: date,
 			};
-			axios
-				.post("http://localhost:3000/bookingroom", objectbooking)
-				.then((res) => {
-					console.log("post object success!");
+			emailjs.send('service_0janfsk', 'template_piopgc2', objectbooking, 'user_5KiMCYtNrqLlFbsDxXynH')
+				.then((result) => {
+					alert("Đang ký thành công !!");
+					axios
+						.post("http://localhost:3000/bookingroom", objectbooking)
+						.then((res) => {
+							console.log("post object success!");
+							setShow(true)
+						});
+				}, (error) => {
+					console.log('error.text');
 				});
-			
+
+
 		}
 	}
-	
+
 
 	const getData = () => {
 		axios.get("http://localhost:3000/room").then((res) => {
 			setListProduct(res.data);
 
 		});
-		
-		
+
+
 	};
-	
+
 
 	useEffect(() => {
 		getData();
-	
+		getobject()
+
 	}, []);
 	return (
 		<div className="container  bg-default">
@@ -92,13 +114,13 @@ const FillInfromation = () => {
 						<div className="form-row">
 							<h2 className="text-center">Điền thông tin</h2>
 							<div className="form-group ">
-								<label htmlFor="inputEmail4">Cong</label>
+								<label htmlFor="inputEmail4">Tên</label>
 								<input
 									onChange={(e) => setName(e.target.value)}
 									type="name"
 									name="namehotel"
 									className="form-control p-2"
-									id="inputEmail4"
+									id="inputname"
 									placeholder="entername"
 								/>
 							</div>
@@ -145,7 +167,7 @@ const FillInfromation = () => {
 							/>
 						</div>
 
-						<button type="submit" className="btn btn-primary">
+						<button type="submit" className="btn btn-warning">
 							Submit
 						</button>
 					</form>
@@ -157,7 +179,7 @@ const FillInfromation = () => {
 						</div>
 						<div className="p-2 d-flex">
 							<div className="col-8"> Price</div>
-							{/* {console.log('price is:',itemroom.price)} */}
+							{console.log('price is:', itemroom.price)}
 							<div className="ml-auto"></div>
 						</div>
 						<div className="p-2 d-flex">
@@ -183,40 +205,25 @@ const FillInfromation = () => {
 							</div>
 							<div className="ml-auto">$40.00</div>
 						</div>
-						<div className="p-2 d-flex">
-							<div className="col-8">
-								Maximum out-of-pocket on Insurance Policy (not reached)
-							</div>
-							<div className="ml-auto">$6500.00</div>
-						</div>
-						<div className="border-top px-4 mx-3"></div>
-						<div className="p-2 d-flex pt-3">
-							<div className="col-8">Insurance Responsibility</div>
-							<div className="ml-auto">
-								<b>$71.76</b>
-							</div>
-						</div>
-						<div className="p-2 d-flex">
-							<div className="col-8">
-								Patient Balance{" "}
-								<span className="fa fa-question-circle text-secondary"></span>
-							</div>
-							<div className="ml-auto">
-								<b>$71.76</b>
-							</div>
-						</div>
-						<div className="border-top px-4 mx-3"></div>
-						<div className="p-2 d-flex pt-3">
-							<div className="col-8">
-								<b>Total</b>
-							</div>
-							<div className="ml-auto">
-								<b className="green">$85.00</b>
-							</div>
-						</div>
+
+
 					</div>
 				</div>
 			</div>
+			<Modal show={show} onHide={handleClose}>
+				<Modal.Header closeButton>
+					<Modal.Title>{name}</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>{itemroom.name}</Modal.Body>
+				<Modal.Footer>
+					<Button variant="secondary" onClick={handleClose}>
+						Close
+					</Button>
+					<Button variant="primary" onClick={handleClose}>
+						Save Changes
+					</Button>
+				</Modal.Footer>
+			</Modal>
 		</div>
 	);
 };

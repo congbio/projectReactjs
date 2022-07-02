@@ -2,16 +2,16 @@
     {
         "id": 1,
        "area": "Phòng 2",
-"date": "1-7-2022",
-"dateinput": "2022-07-02",
-"dateoutput": "2022-07-09",
-"description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
-"email": "cong@gmail.com",
-"image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
-"name": "cong",
-"namehotel": "Phòng 2",
-"numberbed": "Giường đôi",
-"phone": "3456789",
-"price": "1.274.859 ₫"
+        "date": "1-7-2022",
+        "dateinput": "2022-07-02",
+        "dateoutput": "2022-07-09",
+        "description": "ối đa 3 người lớn | 2 người lớn & 2 trẻ em ",
+        "email": "cong@gmail.com",
+        "image": "https://pix8.agoda.net/hotelImages/149036/-1/eb1f0c5d910a31c8b5c12d3d8875f4ca.jpg?ca=11&ce=1&s=450x450",
+        "name": "cong",
+        "namehotel": "Phòng 2",
+        "numberbed": "Giường đôi",
+        "phone": "3456789",
+        "price": "1.274.859 ₫"
     }
 ]
