@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './about.css'
+=======
+import '../css/AboutUS.css'
+>>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
 class About extends Component {
 
     render() {
         return (
+<<<<<<< HEAD
             <>  
                  <div className=''>
+=======
+            <div className=''>
+>>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
             <div className="aboutus">
               <h1>About Us Page</h1>
               <p>Some text about who we are and what we do.</p>
@@ -67,9 +75,12 @@ class About extends Component {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
 
 
             </>
+=======
+>>>>>>> 9e4ec0b8b3a37ebcc876d6976d0bc951121fc64e
         );
     }
 }
