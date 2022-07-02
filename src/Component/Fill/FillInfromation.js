@@ -2,15 +2,19 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Button } from 'react-bootstrap';
 import { Modal } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
+
 
 
 const FillInfromation = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
+	const [name, setName] = useState(localStorage.getItem('username'));
+	const [email, setEmail] = useState(localStorage.getItem('email'));
 	const [phone, setPhone] = useState('');
 	const [dateinput, setadateinput] = useState('');
 	const [dateoutput, setdateoutput] = useState("");
 	const [listProduct, setListProduct] = useState([]);
+	// document.getElementById('inputEmail4').value = name;
+	// document.getElementById('inputEmail4').value = name;
 	var itemroom = {};
 	const checkInput = () => {
 		if (name == "" || email == "" || phone == "" || dateinput == "") {
@@ -62,19 +66,26 @@ const FillInfromation = () => {
 				dateoutput: dateoutput,
 				namehotel: itemroom.name,
 				area: itemroom.name,
+				price: itemroom.price,
 				description: itemroom.description,
 				image: itemroom.image,
 				numberbed: itemroom.numberbed,
 				price: itemroom.price,
 				date: date,
 			};
-			axios
-				.post("http://localhost:3000/bookingroom", objectbooking)
-				.then((res) => {
-					console.log("post object success!");
-					setShow(true)
-
+			emailjs.send('service_0janfsk', 'template_piopgc2', objectbooking, 'user_5KiMCYtNrqLlFbsDxXynH')
+				.then((result) => {
+					alert("Đang ký thành công !!");
+					axios
+						.post("http://localhost:3000/bookingroom", objectbooking)
+						.then((res) => {
+							console.log("post object success!");
+							setShow(true)
+						});
+				}, (error) => {
+					console.log('error.text');
 				});
+
 
 		}
 	}
@@ -109,7 +120,7 @@ const FillInfromation = () => {
 									type="name"
 									name="namehotel"
 									className="form-control p-2"
-									id="inputEmail4"
+									id="inputname"
 									placeholder="entername"
 								/>
 							</div>
